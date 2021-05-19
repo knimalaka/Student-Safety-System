@@ -1,13 +1,279 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input, button{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
 }
+
+.App{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #adafaea2;
+}
+
+
+.FrontPage{
+    display: block;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.FrontPage .Login{
+    display: inline-block;
+    padding: 7px 18px;
+    border-radius: 5px;
+    background-color: #5499C7 ;
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #17202A;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: 350px;
+    margin-right: -50px;
+}
+
+.FrontPage .Signup{
+    display: inline-block;
+    padding: 7px 18px;
+    border-radius: 5px;
+    background-color: #5499C7 ;
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #17202A;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: 260px;
+    margin-right: -50px;
+}
+
+.FrontPage img{
+    padding: 60px 20px; 
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+ }
+
+.FrontPage h2{
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;    
+}
+
+
+.h2_1{
+    color: #17202A;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    position: absolute;
+    top: 300px;
+}
+
+.h2_2{
+    color: #17202A;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    position: absolute;
+    top: 340px;
+}
+
+form{
+    display: block;
+    position: relative;
+}
+
+form .form-inner h2{
+    color: #17202A;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;    
+}
+
+form .form-inner .form-group{
+    display: block;
+    width: 250px;
+    margin-bottom: 15px;
+    margin-top: 10px;        
+}
+
+.form-inner .form-group label{
+    display: block;
+    color: #17202A;
+    font-size: 14px;
+    margin-bottom: 5px;
+    transition: 0.4s;    
+}
+
+.form-inner .form-group:focus-within label{
+    color: #515A5A;
+}
+
+form .form-inner .form-group input{
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color:  #adafaea2;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+form .form-inner .form-group input:focus {
+    box-shadow: 0px 0px 10px black (0,0,0,0.2);
+}
+
+        
+form .form-inner input[type="submit"]{
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #2ECC71 ;
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #17202A;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    bottom: -50px;
+    right: 0px;
+}
+
+.welcome {
+    width: 100%;
+    max-width: 480px;
+    padding: 15px 30px;
+    color: #515A5A;
+}
+
+.welcome h2{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.welcome h2 span{
+    color: #1F618D;
+}
+
+.welcome button{
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: black ;
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: azure;
+    font-weight: 700;
+    cursor: pointer;       
+
+}
+
+.error{
+    color: #C0392B;
+}
+
+.Home{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    display: block;
+    position: absolute;
+    top: 325px;
+}
+
+.Navbar3{
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #5499C7 ;
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #17202A;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    right: 190px;
+   }
+
+.Navbar1{
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #5499C7 ;
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #17202A;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    right: 27px;
+ }
+
+.Navbar2{
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #5499C7 ;
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #17202A;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    right: -90px;
+ }
+
+.Home button{
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: black ;
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: azure;
+    font-weight: 700;
+    cursor: pointer; 
+    position:absolute;
+    right: -200px;
+ }
+
+ .AttendaceReport h2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    display: block;
+    position: absolute;
+    top: 400px;
+ }
+
+
