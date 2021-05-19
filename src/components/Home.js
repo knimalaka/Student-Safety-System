@@ -1,4 +1,4 @@
-/*import React, {useState} from 'react';
+import React, {useState} from 'react';
 import{ BrowserRouter as Router, Route, Link, NavLink, Switch} from "react-router-dom";
 import AttendanceReport from "./AttendanceReport";
 import EditDetails from "./EditDetails"; 
@@ -52,4 +52,3 @@ let history = useHistory();
 
 export default Home;
 
-*/
