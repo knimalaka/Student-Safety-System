@@ -1,4 +1,3 @@
-/*
 import React, {useState} from 'react';
 
 function SignupForm(Signup){
@@ -12,5 +11,5 @@ function SignupForm(Signup){
 }
 
 export default SignupForm;
-*/
+
 
