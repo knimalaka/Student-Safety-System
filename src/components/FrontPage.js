@@ -1,4 +1,3 @@
-/*
 import React, {useState,Component} from 'react';
 import {useHistory} from "react-router-dom";
 import img1 from '../Images/Main.png';
@@ -38,4 +37,4 @@ function FrontPage(){
 }
 
 export default FrontPage;
-*/
+

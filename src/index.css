@@ -29,7 +29,7 @@ input, button{
     justify-content: center;
 
 }
-/*
+
 .FrontPage .Login{
     display: inline-block;
     padding: 7px 18px;
@@ -46,7 +46,7 @@ input, button{
     right: 350px;
     margin-right: -50px;
 }
-*/
+
 .FrontPage .Signup{
     display: inline-block;
     padding: 7px 18px;
