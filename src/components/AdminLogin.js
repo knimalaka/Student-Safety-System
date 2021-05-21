@@ -4,20 +4,9 @@ function AdminLogin() {
      
     return (
   
-      <div className="App">
+      <div className="AdminLogin">
   
-        <Router>
-     
-          <Switch>
-  
-          <Route exact path="/components/Home" component={Home} />
-          <Route exact path="/components/LoginForm" component={LoginForm} />
-          <Route exact path="/components/SignupForm" component={SignupForm} />
-          <Route exact path="/components/FrontPage" component={FrontPage} />
-  
-          </Switch>
-              
-        </Router>
+        
           
       </div>
   
