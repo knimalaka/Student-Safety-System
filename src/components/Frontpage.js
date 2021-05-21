@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 
-function UserFrontPage() {
+function FrontPage() {
      
     return (
   
-      <div className="UserFrontPage">
+      <div className="FrontPage">
   
         
           
@@ -13,5 +13,5 @@ function UserFrontPage() {
     );
   }
   
-  export default UserFrontPage;
+  export default FrontPage;
   
