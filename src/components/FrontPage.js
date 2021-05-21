@@ -3,13 +3,13 @@ import {useHistory} from "react-router-dom";
 import img1 from '../Images/Main.png';
 
  
-function FrontPage(){
+function UserFrontPage(){
 
     let history = useHistory();
 
     return(
         
-        <div className="FrontPage">
+        <div className="UserFrontPage">
 
         <img src={img1} alt=""/>
 
@@ -36,5 +36,5 @@ function FrontPage(){
     )
 }
 
-export default FrontPage;
+export default UserFrontPage;
 
