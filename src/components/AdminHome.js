@@ -55,5 +55,5 @@ let history = useHistory();
     )
 }
 
-export default Home;
+export default AdminHome;
 
