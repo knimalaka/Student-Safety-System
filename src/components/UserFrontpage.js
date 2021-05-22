@@ -25,13 +25,8 @@ function UserFrontPage(){
         <div className="h2_1">
         <h2>STUDENT SAFETY</h2>
         </div>
-
-        <div className="h2_2">
-        <h2>SYSTEM</h2>        
-        </div>
-
-        </div>
-    
+        
+    </div>
            
     )
 }
