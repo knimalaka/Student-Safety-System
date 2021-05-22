@@ -23,31 +23,6 @@ function LoginForm() {
 
                 history.push("./Home")
 
-
-                /*
-                    <div className="welcome">
-                    <h2>Welcome, <span>{user.name}</span></h2>
-                    <button onClick={Logout}>Logout</button>
-                    </div>
-                    
-                */  
-                   
-                    
-        
-
-          /*setUser({
-            name : details.name,
-            email : details.email
-            */
-        
-        /*
-        <Switch>
-            <Route path="/components/Home" component={Home} />
-        </Switch>
-        */
-
-        
-
         );
 
         } else {
@@ -76,24 +51,6 @@ function LoginForm() {
     }
 
     return (
-
-        /*
-        (
-        (user.email != "") ? (
-            <div className="welcome">
-            <h2>Welcome, <span>{user.name}</span></h2>
-            <button onClick={Logout}>Logout</button>
-            </div>
-            ):(      
-              <LoginForm Login={Login} error={error} />
-            )
-        ),
-        */
-
-
-
-
-
     
 
         <form onSubmit={submitHandler}>
