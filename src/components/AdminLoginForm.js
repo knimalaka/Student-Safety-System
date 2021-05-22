@@ -21,7 +21,7 @@ function AdminLoginForm() {
         if(details.email == adminUser.email && details.password == adminUser.password){
              return(
 
-                history.push("./Home")
+                history.push("./AdminHome")
 
         );
 
