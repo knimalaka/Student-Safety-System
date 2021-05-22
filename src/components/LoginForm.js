@@ -8,7 +8,7 @@ function LoginForm() {
     let history = useHistory();
 
     const adminUser = {
-        email : "admin@admin.com",
+        email : "parent@parent.com",
         password : "1234"
       }
     
@@ -34,11 +34,6 @@ function LoginForm() {
       const Logout = () => {
         setUser({name: "", email: ""});
       }
-
-
-
-
-
 
 
 
