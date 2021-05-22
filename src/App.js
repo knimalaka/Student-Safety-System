@@ -3,7 +3,7 @@ import{ BrowserRouter as Router, Route, Link, NavLink, Switch} from "react-route
 import LoginForm from './components/LoginForm';
 import SignupForm from './components/SignupForm';
 import Home from './components/Home';
-import FrontPage from './components/FrontPage';
+import UserFrontPage from './components/UserFrontPage';
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Route exact path="/components/Home" component={Home} />
         <Route exact path="/components/LoginForm" component={LoginForm} />
         <Route exact path="/components/SignupForm" component={SignupForm} />
-        <Route exact path="/components/FrontPage" component={FrontPage} />
+        <Route exact path="/components/UserFrontPage" component={UserFrontPage} />
 
         </Switch>
             
