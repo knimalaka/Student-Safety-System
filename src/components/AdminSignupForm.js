@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 
-function AdminLogin() {
+function AdminSignupForm() {
      
     return (
   
-      <div className="AdminLogin">
+      <div className="AdminSignupForm">
   
         
           
@@ -13,5 +13,5 @@ function AdminLogin() {
     );
   }
   
-  export default AdminLogin;
+  export default AdminSignupForm;
   

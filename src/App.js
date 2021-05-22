@@ -6,8 +6,8 @@ import Home from './components/Home';
 import UserFrontPage from './components/UserFrontPage';
 import FrontPage from './components/FrontPage';
 import AdminFrontPage from './components/AdminFrontpage';
-import AdminLogin from './components/AdminLogin';
-import AdminSignup from './components/AdminSignup';
+import AdminLoginForm from './components/AdminLoginForm';
+import AdminSignupForm from './components/AdminSignupForm';
 
 
 function App() {
@@ -26,8 +26,8 @@ function App() {
         <Route exact path="/components/UserFrontPage" component={UserFrontPage} />
         <Route exact path="/components/FrontPage" component={FrontPage}/>
         <Route exact path="/components/AdminFrontPage" component={AdminFrontPage}/>
-        <Route exact path="/components/Adminlogin" component={AdminLogin}/>
-        <Route exact path="/components/AdminSignup" component={AdminSignup}/>
+        <Route exact path="/components/AdminloginForm" component={AdminLoginForm}/>
+        <Route exact path="/components/AdminSignupForm" component={AdminSignupForm}/>
 
 
 
