@@ -18,19 +18,19 @@ let history = useHistory();
         <div className="Home">
 
         <div className="Navbar3">
-        <NavLink exact activeClassName="active" to="/components/AdminHome">AdminHome</NavLink>
+        <NavLink exact activeClassName="active" to="/components/AdminHome">Admin Home</NavLink>
         </div>
 
         <div className="Navbar4">
-        <NavLink exact activeClassName="active" to="/components/MarkAttendance">MarkAttendace</NavLink>
+        <NavLink exact activeClassName="active" to="/components/MarkAttendance">Mark Attendance</NavLink>
         </div>
 
         <div className="Navbar1">
-        <NavLink exact activeClassName="active" to="/components/AttendanceReport">AttendaceReport</NavLink>
+        <NavLink exact activeClassName="active" to="/components/AttendanceReport">Attendace Report</NavLink>
         </div>
 
         <div className="Navbar2">
-        <NavLink exact activeClassName="active" to="/components/AdminSettings">AdminSettings</NavLink>
+        <NavLink exact activeClassName="active" to="/components/AdminSettings">Admin Settings</NavLink>
         </div>
 
 
