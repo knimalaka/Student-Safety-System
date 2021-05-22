@@ -9,7 +9,7 @@ function AdminFrontPage(){
 
     return(
         
-        <div className="AdminFrontPage">
+        <div className="UserFrontPage">
 
         <img src={img1} alt=""/>
 

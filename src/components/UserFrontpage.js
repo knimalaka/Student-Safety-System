@@ -9,7 +9,7 @@ function UserFrontPage(){
 
     return(
         
-        <div className="UserFrontPage">
+    <div className="UserFrontPage">
 
         <img src={img1} alt=""/>
 
@@ -25,7 +25,7 @@ function UserFrontPage(){
         <div className="h2_1">
         <h2>STUDENT SAFETY</h2>
         </div>
-        
+
     </div>
            
     )

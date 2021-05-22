@@ -47,6 +47,24 @@ input, button{
     margin-right: -50px;
 }
 
+
+.UserFrontPage .AdminLogin{
+    display: inline-block;
+    padding: 7px 18px;
+    border-radius: 5px;
+    background-color: #5499C7 ;
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #17202A;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: 350px;
+    margin-right: 0px;
+}
+
 .UserFrontPage .Signup{
     display: inline-block;
     padding: 7px 18px;
@@ -62,6 +80,24 @@ input, button{
     top: -20px;
     right: 260px;
     margin-right: -50px;
+}
+
+
+.UserFrontPage .AdminSignup{
+    display: inline-block;
+    padding: 7px 18px;
+    border-radius: 5px;
+    background-color: #5499C7 ;
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #17202A;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: 260px;
+    margin-right: -40px;
 }
 
 .UserFrontPage img{
