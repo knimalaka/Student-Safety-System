@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import{ BrowserRouter as Router, Route, Link, NavLink, Switch} from "react-router-dom";
 import AttendanceReport from "./AttendanceReport";
 import EditDetails from "./EditDetails"; 
-import UserFrontPage from "./UserFrontPage";
+import FrontPage from "./FrontPage";
 import {useHistory} from "react-router-dom";
 
 
@@ -30,14 +30,14 @@ let history = useHistory();
 
 
 
-        <button onClick= {() => { history.push("./UserFrontPage"); }}>SignOut</button>
+        <button onClick= {() => { history.push("./FrontPage"); }}>SignOut</button>
 
         <hr />
         
         <Switch>
           <Route path="/components/AttendanceReport" component={AttendanceReport} />
           <Route path="/components/EditDetails" component={EditDetails} />
-          <Route path="/components/UserFrontpage" component={UserFrontPage} />
+          <Route path="/components/Frontpage" component={FrontPage} />
 
 
         </Switch>
