@@ -11,17 +11,18 @@ function FrontPage() {
       return(
           
         <div className="FrontPage">  
+
+        
+          <div className="h2_1">
+          <h2>STUDENT SAFETY</h2>
+          </div>
   
           <div className="Parent">
-          <button onClick= {() => { history.push("./UserFrontPage"); }}><img src={img2}/>Parent</button>
+          <button2 onClick= {() => { history.push("./UserFrontPage"); }}><img src={img2}/>Parent</button2>
           </div>
   
           <div className="Admin">
-          <button onClick= {() => { history.push("./AdminFrontPage"); }}><img src={img3}/>Admin</button>
-          </div>
-  
-          <div className="h2_1">
-          <h2>STUDENT SAFETY</h2>
+          <button3 onClick= {() => { history.push("./AdminFrontPage"); }}><img src={img3}/>Admin</button3>
           </div>
   
   

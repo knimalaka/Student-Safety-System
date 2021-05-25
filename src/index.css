@@ -337,11 +337,6 @@ form .form-inner input[type="submit"]{
     top: 325px;
 }
 
-.FrontPage button{
-    display: inline-block;
-    padding: 20px 20px;
-}
-
 .FrontPage img{
     padding: 60px 20px; 
     width: 30%;
@@ -349,3 +344,5 @@ form .form-inner input[type="submit"]{
     justify-content: center;
     display: flex;
  }
+
+
