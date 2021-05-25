@@ -15,7 +15,7 @@ function FrontPage() {
         <link href="//db.onlinewebfonts.com/c/3907276073752a03016016622e01a154?family=Cassannet+Regular" 
         rel="stylesheet" type="text/css"/>
 
-          <div>
+          <div className="FrontPageLogo">
           <img src={img1}/>
           </div>
         
