@@ -327,8 +327,8 @@ form .form-inner input[type="submit"]{
     position: absolute;
     top: 400px;
  }
-
- .FrontPage{
+ 
+.FrontPage{
     align-items: center;
     justify-content: center;
     display: flex;
@@ -337,12 +337,37 @@ form .form-inner input[type="submit"]{
     top: 325px;
 }
 
-.FrontPage img{
-    padding: 60px 20px; 
-    width: 30%;
+
+@import url(//db.onlinewebfonts.com/c/3907276073752a03016016622e01a154?family=Cassannet+Regular);
+
+
+
+.FrontPage h2{
+    font-size: 30px;
+    font-family: "Cassannet Regular"; src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot"); src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot?#iefix")
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.svg#Cassannet Regular") format("svg"); 
+    font-weight: 550; 
+    padding: 10px 10px;   
     align-items: center;
     justify-content: center;
+    position: absolute;
     display: flex;
- }
+    display: block;
+    top: -440px;
+    margin-left: 700px;
+    color: #1F618D;
+}
 
+.Parent img{
+    width: 30%;
+    padding: 0px 10px;
+}
 
+.Admin img{
+    width: 25%;
+    padding: 4px 10px;
+    margin-top: 40px;
+
+}
+ 
