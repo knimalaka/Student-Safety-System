@@ -22,6 +22,9 @@ function UserFrontPage(){
         <button onClick= {() => { history.push("./SignupForm"); }}>Signup</button>
         </div>
 
+        <link href="//db.onlinewebfonts.com/c/3907276073752a03016016622e01a154?family=Cassannet+Regular" 
+        rel="stylesheet" type="text/css"/>
+        
         <div className="h2_1">
         <h2>STUDENT SAFETY</h2>
         </div>

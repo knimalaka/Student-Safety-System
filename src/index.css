@@ -1,3 +1,5 @@
+@import url(//db.onlinewebfonts.com/c/3907276073752a03016016622e01a154?family=Cassannet+Regular);
+
 *{
     margin: 0;
     padding: 0;
@@ -109,9 +111,12 @@ input, button{
  }
 
 .UserFrontPage h2{
-    font-size: 28px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 300;    
+    font-size: 30px;
+    font-family: "Cassannet Regular"; src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot"); src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot?#iefix")
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.svg#Cassannet Regular") format("svg"); 
+    font-weight: 500;  
+    color: #1F618D;
 }
 
 
@@ -336,10 +341,6 @@ form .form-inner input[type="submit"]{
     position: absolute;
     top: 325px;
 }
-
-
-@import url(//db.onlinewebfonts.com/c/3907276073752a03016016622e01a154?family=Cassannet+Regular);
-
 
 
 .FrontPage h2{
