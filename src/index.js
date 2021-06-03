@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './FrontPage.css';
 import './UserFrontPage.css';
+import './LoginForm.css';
 
 ReactDOM.render(
   <React.StrictMode>
