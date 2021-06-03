@@ -31,8 +31,7 @@ function FrontPage() {
           <button onClick= {() => { history.push("./AdminFrontPage"); }}><div><img src={img3}/></div>Admin</button>
           </div>
   
-  
-        </div>
+          </div>                      
   
     )
   }
