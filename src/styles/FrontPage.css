@@ -1,16 +1,27 @@
 @import url(//db.onlinewebfonts.com/c/3907276073752a03016016622e01a154?family=Cassannet+Regular);
-
+ 
 .FrontPage{
     align-items: center;
     justify-content: center;
     display: flex;
     display: block;
     position: absolute;
-    top: 325px;
+    background: url(../Images/FrontPageBackground3.jpg) no-repeat center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
+.FrontPageLogo img{
+    margin-top: 100px;
+    width: 7%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
 
-.FrontPage h2{
+.h2_1 h2{
     font-size: 30px;
     font-family: "Cassannet Regular"; src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot"); src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot?#iefix")
     format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff") format("woff"), 
@@ -22,33 +33,65 @@
     position: absolute;
     display: flex;
     display: block;
-    top: -100px;
-    margin-left: 300px;
+    top: 100px;
+    margin-left: 60%;
     color: #0f7aab;
 }
 
-.Parent img{
-    width: 10%;
-    margin-top: 200px;
-    margin-left: 200px;
-    position: absolute;
 
-}
-
-.Admin img{
-    width: 10%;
-    margin-top: 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                00px;
-    margin-left: 100px;
- }
-
-.FrontPageLogo img{
-    width: 21%;
-    padding: 20px 20px;
-    top: -150px;
-    left: 150px;
+.h2_2 h2{
+    font-size: 30px;
+    font-family: "Cassannet Regular"; src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot"); src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot?#iefix")
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.svg#Cassannet Regular") format("svg"); 
+    font-weight: 550; 
+    padding: 10px 10px;   
     align-items: center;
     justify-content: center;
     position: absolute;
     display: flex;
     display: block;
+    top: 100px;
+    margin-left: 80%;
+    color: #0f7aab;
+}
+
+.Parent img{
+    max-width:15%;
+    max-height:15%;
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+
+.ParentWord{
+    top: 80%;
+    left: 47%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    font-family: cursive;
+    font-size: 24px;
+ }
+
+.Admin img{
+    max-width:14%;
+    max-height:14%;
+    position:absolute;
+    top:70%;
+    left:75%;
+    transform:translate(-50%,-50%);
+  }
+
+.AdminWord{
+    top: 80%;
+    left: 72%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    font-family: cursive;
+    font-size: 24px;
  }

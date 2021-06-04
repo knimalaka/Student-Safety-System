@@ -20,15 +20,19 @@ function FrontPage() {
           </div>
         
           <div className="h2_1">
-          <h2>STUDENT SAFETY</h2>
+          <h2>STUDENT</h2>
+          </div>
+
+          <div className="h2_2">
+          <h2>SAFETY</h2>
           </div>
   
           <div className="Parent">
-          <button onClick= {() => { history.push("./UserFrontPage"); }}><div><img src={img2}/></div>Parent</button>
+          <button onClick= {() => { history.push("./UserFrontPage"); }}><div><img src={img2}/></div><div className="ParentWord">Parent</div></button>
           </div>
   
           <div className="Admin">
-          <button onClick= {() => { history.push("./AdminFrontPage"); }}><div><img src={img3}/></div>Admin</button>
+          <button onClick= {() => { history.push("./AdminFrontPage"); }}><div><img src={img3}/></div><div className="AdminWord">Admin</div></button>
           </div>
   
           </div>                      
