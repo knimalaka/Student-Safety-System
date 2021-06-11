@@ -47,10 +47,10 @@ function AdminLoginForm() {
 
     return (
     
-
+    <div className="LoginForm">
         <form onSubmit={submitHandler}>
             <div className="form-inner">
-                <h2>Admin Login</h2>
+                <div className="admin-form-inner"><h2>Admin Login</h2></div>
                 {(error != "") ? (<div className="error">{error}</div>): ""}
                 <div className="form-group">
                     <label htmlFor="name">Name:</label>
@@ -67,6 +67,7 @@ function AdminLoginForm() {
                 <input type="submit" value="LOGIN" />
             </div>
         </form>        
+    </div>
         
     )
 }

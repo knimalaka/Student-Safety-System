@@ -1,8 +1,31 @@
-
-form{
+.LoginForm{
+ 
+    background: url(../Images/UserFront2.jpg) no-repeat center fixed;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    height: 100%;
     display: block;
     position: relative;
-    top: -200px;
+   }
+
+
+
+form{
+    background: url(../Images/UserFront2.jpg) no-repeat center fixed;
+    background-size: cover;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right: 50%;
+    margin-left: 50%;       
+    left: -120px;
+    width: 50%;
+
+    display: block;
+    position: relative;
+    top: 100px;
 }
 
 
@@ -13,15 +36,29 @@ form .form-inner h2{
     margin-bottom: 50px;
     align-items: center;
     justify-content: center;
-    display: flex;    
-}
+    display: flex;  
+    display: block; 
+    margin-left: 85px;
+   }
+   
+form .admin-form-inner h2{
+    color: #17202A;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;  
+    display: block; 
+    margin-left: 50px;
+   }
 
 form .form-inner .form-group{
     display: block;
     width: 250px;
     margin-bottom: 15px;
-    margin-top: 10px;        
-}
+    margin-top: 10px;   
+ }
 
 .form-inner .form-group label{
     display: block;
@@ -61,11 +98,11 @@ form .form-inner input[type="submit"]{
     font-weight: 700;
     cursor: pointer;
     position: absolute;
-    bottom: -50px;
-    right: 0px;
-}
+    top: 350px;
+    left: 87px;
+ }
 
 
 .error{
     color: #C0392B;
-}
+  }

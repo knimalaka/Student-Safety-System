@@ -47,7 +47,7 @@ function LoginForm() {
 
     return (
     
-
+    <div className="LoginForm"> 
         <form onSubmit={submitHandler}>
             <div className="form-inner">
                 <h2>Login</h2>
@@ -66,7 +66,8 @@ function LoginForm() {
                 </div>
                 <input type="submit" value="LOGIN" />
             </div>
-        </form>        
+        </form> 
+    </div>       
         
     )
 }
