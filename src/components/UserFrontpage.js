@@ -11,8 +11,9 @@ function UserFrontPage(){
         
     <div className="UserFrontPage">
 
+        <div className="UserFrontPageLogo">
         <img src={img1} alt=""/>
-
+        </div>
 
         <div className="Login">
         <button onClick= {() => { history.push("./LoginForm"); }}>Login</button>

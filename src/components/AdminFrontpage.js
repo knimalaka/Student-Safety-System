@@ -11,7 +11,9 @@ function AdminFrontPage(){
         
         <div className="UserFrontPage">
 
+        <div className="UserFrontPageLogo">
         <img src={img1} alt=""/>
+        </div>
 
 
         <div className="AdminLogin">
