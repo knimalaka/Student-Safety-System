@@ -2,13 +2,15 @@
 form{
     display: block;
     position: relative;
+    top: -200px;
 }
+
 
 form .form-inner h2{
     color: #17202A;
     font-size: 28px;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     align-items: center;
     justify-content: center;
     display: flex;    
@@ -46,8 +48,7 @@ form .form-inner .form-group input{
 form .form-inner .form-group input:focus {
     box-shadow: 0px 0px 10px black (0,0,0,0.2);
 }
-
-        
+      
 form .form-inner input[type="submit"]{
     display: inline-block;
     padding: 10px 15px;
@@ -64,36 +65,6 @@ form .form-inner input[type="submit"]{
     right: 0px;
 }
 
-.welcome {
-    width: 100%;
-    max-width: 480px;
-    padding: 15px 30px;
-    color: #515A5A;
-}
-
-.welcome h2{
-    font-size: 28px;
-    font-weight: 500;
-    margin-bottom: 30px;
-}
-
-.welcome h2 span{
-    color: #1F618D;
-}
-
-.welcome button{
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: black ;
-    background-size: 200%;
-    background-position: 0%;
-    transition: 0.4s;
-    color: azure;
-    font-weight: 700;
-    cursor: pointer;       
-
-}
 
 .error{
     color: #C0392B;
