@@ -5,7 +5,6 @@
     justify-content: center;
     display: flex;
     display: block;
-    position: absolute;
     background: url(../Images/FrontPageBackground3.jpg) no-repeat center fixed;
     background-size: cover;
     height: 100%;
@@ -13,16 +12,35 @@
     margin: 0;
 }
 
+.FrontPageLogo{
+    text-align: justify;
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%,-50%);  
+    margin-left: -150px;
+}
+
 .FrontPageLogo img{
     margin-top: 100px;
-    width: 7%;
+    width: 200PX;
     display: block;
-    margin-left: auto;
+    margin-left: 40%;
     margin-right: auto;
  }
 
+ .h2_1{
+    text-align: justify;
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%,-50%);  
+    margin-left: 30px; }
+
 .h2_1 h2{
-    font-size: 30px;
+    font-size: 80px;
     font-family: "Cassannet Regular"; src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot"); src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot?#iefix")
     format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff") format("woff"), 
     url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.svg#Cassannet Regular") format("svg"); 
@@ -33,65 +51,80 @@
     position: absolute;
     display: flex;
     display: block;
-    top: 100px;
-    margin-left: 60%;
-    color: #0f7aab;
+    top: 95px;
+    margin-left: 51%;
+    color: #00004d
+    ;
 }
 
-
-.h2_2 h2{
-    font-size: 30px;
-    font-family: "Cassannet Regular"; src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot"); src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot?#iefix")
-    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff") format("woff"), 
-    url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.svg#Cassannet Regular") format("svg"); 
-    font-weight: 550; 
-    padding: 10px 10px;   
-    align-items: center;
-    justify-content: center;
+.Parent{
+    text-align: justify;
     position: absolute;
-    display: flex;
-    display: block;
-    top: 100px;
-    margin-left: 80%;
-    color: #0f7aab;
-}
-
-.Parent img{
-    max-width:15%;
-    max-height:15%;
-    position:absolute;
-    top:70%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+    margin-left: -50px;
   }
 
-.ParentWord{
-    top: 80%;
-    left: 47%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+  
+.imageParent{
+    text-align: justify;
+    width: 150px;
     position: absolute;
-    font-family: cursive;
-    font-size: 24px;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);  
+    margin-left: 0px;
+    padding: 10px 10px;
+  }
+
+ .imageParent img{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+  }
+
+ .imageParent p{
+     text-align: center;
+     font-family: cursive;
+     font-size: 24px;
  }
 
-.Admin img{
-    max-width:14%;
-    max-height:14%;
-    position:absolute;
-    top:70%;
-    left:75%;
-    transform:translate(-50%,-50%);
+
+
+ .Admin{
+    text-align: justify;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+    margin-left: 200px;  
+   }
+
+
+  .imageAdmin{
+    text-align: justify;
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);  
+    margin-left: 0px;
+    padding: 10px 10px;
   }
 
-.AdminWord{
-    top: 80%;
-    left: 72%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    position: absolute;
-    font-family: cursive;
-    font-size: 24px;
+ .imageAdmin img{
+     display: block;
+     margin: 0 auto;
+     width: 90px;
+     text-align: center;
+ }
+
+ .imageAdmin p{
+     text-align: center;
+     margin-left: -10px;
+     font-family: cursive;
+     font-size: 24px;
+     padding: 8px 0px;
  }
