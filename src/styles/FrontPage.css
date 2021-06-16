@@ -19,8 +19,7 @@
     left: 50%;
     top: 15%;
     transform: translate(-50%,-50%);  
-    margin-left: -100px;
-}
+ }
 
 .FrontPageLogo img{
     margin-top: 70px;
@@ -37,7 +36,8 @@
     left: 50%;
     top: 0%;
     transform: translate(-50%,-50%);  
-    margin-left: 30px; }
+    margin-left: -125px; 
+}
 
 .h2_1 h2{
     font-size: 65px;
@@ -51,7 +51,34 @@
     position: absolute;
     display: flex;
     display: block;
-    top: 97px;
+    top: 280px;
+    margin-left: 49%;
+    color: #00004d;
+}
+
+.h2_2{
+    text-align: justify;
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%,-50%);  
+    margin-left: -108px; 
+}
+
+.h2_2 h2{
+    font-size: 65px;
+    font-family: "Cassannet Regular"; src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot"); src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot?#iefix")
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.svg#Cassannet Regular") format("svg"); 
+    font-weight: 550; 
+    padding: 10px 10px;   
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    display: block;
+    top: 350px;
     margin-left: 49%;
     color: #00004d;
 }
@@ -62,7 +89,7 @@
     left: 50%;
     top: 65%;
     transform: translate(-50%,-50%);
-    margin-left: -50px;
+    margin-left: -70px;
   }
 
   
@@ -80,14 +107,14 @@
  .imageParent img{
     display: block;
     margin: 0 auto;
-    width: 100px;
+    width: 80px;
     text-align: center;
   }
 
  .imageParent p{
      text-align: center;
      font-family: cursive;
-     font-size: 24px;
+     font-size: 20px;
  }
 
 
@@ -98,7 +125,7 @@
     left: 50%;
     top: 65%;
     transform: translate(-50%,-50%);
-    margin-left: 200px;  
+    margin-left: 100px;  
    }
 
 
@@ -110,13 +137,12 @@
     top: 65%;
     transform: translate(-50%,-50%);  
     margin-left: 0px;
-    padding: 10px 10px;
-  }
+   }
 
  .imageAdmin img{
      display: block;
      margin: 0 auto;
-     width: 90px;
+     width: 100px;
      text-align: center;
  }
 
@@ -124,6 +150,6 @@
      text-align: center;
      margin-left: -10px;
      font-family: cursive;
-     font-size: 24px;
-     padding: 8px 0px;
+     font-size: 20px;
+     margin-top: 20px;
  }

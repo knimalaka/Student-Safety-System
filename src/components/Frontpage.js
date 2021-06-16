@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
 import img1 from '../Images/Main.png';
-import img2 from '../Images/parent.png';
-import img3 from '../Images/admin2.png';
+import img2 from '../Images/parent4.png';
+import img3 from '../Images/parent2.png';
 
 function FrontPage() {  
     
@@ -20,9 +20,12 @@ function FrontPage() {
           </div>
         
           <div className="h2_1">
-          <h2>STUDENT SAFETY</h2>
+          <h2>STUDENT</h2>
           </div>
 
+          <div className="h2_2">
+          <h2>SAFETY</h2>
+          </div>
   
           <div className="Parent">
           <button onClick= {() => { history.push("./UserFrontPage"); }}>

@@ -1,6 +1,7 @@
 import React, {useState,Component} from 'react';
 import {useHistory} from "react-router-dom";
 import img1 from '../Images/Main.png';
+import img2 from '../Images/children2.png';
 
  
 function AdminFrontPage(){
@@ -26,6 +27,10 @@ function AdminFrontPage(){
 
         <div className="h2_1">
         <h2>STUDENT SAFETY</h2>
+        </div>
+        
+        <div className="UserFrontPageLogo2">
+        <img src={img2} alt=""/>
         </div>
         
     </div>

@@ -5,7 +5,7 @@
     justify-content: center;
     display: flex;
     display: block;
-    background: url(../Images/UserFront4.jpg) no-repeat center fixed;
+    background: url(../Images/UserFront2.jpg) no-repeat center fixed;
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -19,14 +19,14 @@
     left: 50%;
     top: 10%;
     transform: translate(-50%,-50%);  
-    margin-left: -150px;
+    margin-left: -50px;
 }
 
 .UserFrontPageLogo img{
     margin-top: 80px;
     width: 100px;
     display: block;
-    margin-left: 70%;
+    margin-left: 50%;
   }
 
 .UserFrontPage h2{
@@ -37,7 +37,7 @@
     font-weight: 500;  
     color: #00004d;
     top: 200px;
-    margin-left: 35%;
+    margin-left: 50%;
 }
 .UserFrontPage .Login{
     display: inline-block;
@@ -53,6 +53,7 @@
     position: absolute;
     top: 300px;
     margin-left: 50%;
+    left: -32px;
 }
 
 .UserFrontPage .AdminLogin{
@@ -69,6 +70,7 @@
     position: absolute;
     top: 300px;
     margin-left: 49%;
+    left: -40px;
 }
 
 .UserFrontPage .Signup{
@@ -85,6 +87,7 @@
     position: absolute;
     top: 400px;
     margin-left: 50%;
+    left: -35px;
 }
 
 
@@ -102,4 +105,21 @@
     position: absolute;
     top: 400px;
     margin-left: 49%;
+    left: -40px;
 }
+
+.UserFrontPageLogo2{
+    text-align: justify;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);  
+    margin-left: -250px;
+}
+
+.UserFrontPageLogo2 img{
+    margin-top: 70px;
+    width: 500px;
+    display: block;
+    margin-left: 50%;
+  }
