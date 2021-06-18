@@ -7,6 +7,7 @@ import './styles/FrontPage.css';
 import './styles/UserFrontPage.css';
 import './styles/LoginForm.css';
 import './styles/Home.css';
+import './styles/UserSignupForm.css';
 
 ReactDOM.render(
   <React.StrictMode>
