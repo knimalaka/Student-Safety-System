@@ -1,11 +1,17 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
-  
-function SignupForm(){
-const {register, handleSubmit, errors} = useForm();
-const onSubmit = (data) => console.log(data);
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 
+const schema = yup.object().shape({
+    username: yup.string().required(),
+    password: yup.string().required().min(5),
+});
+
+function SignupForm(){
+    
 const content={
+
     inputs: [
         {
             label:'Username',
@@ -20,6 +26,13 @@ const content={
     ],
 };
 
+const {register, handleSubmit,errors} = useForm({
+ 
+});
+
+const onSubmit = (data) => console.log(data);
+console.log(errors);
+
     return(
         <div className="UserSignupForm">
         <form  onSubmit={handleSubmit(onSubmit)}>
@@ -32,13 +45,13 @@ const content={
                     </p>
                     <p>
                         <input 
-                        name={input.label} 
+                        name={input.name} 
                         className="input"
                         type={input.type}
                         {...register(input.label)}
                         />
                     </p>
-                </div>
+                  </div>
                 );
             })}
             <button className="btn" type="submit">
@@ -46,8 +59,8 @@ const content={
             </button>           
         </form>
         </div>
-    )
-}
+    );
+};
 
 export default SignupForm;
  
