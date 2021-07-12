@@ -28,12 +28,12 @@ function FrontPage() {
           </div>
   
           <div className="Parent">
-          <button onClick= {() => { history.push("./UserFrontPage"); }}>
+          <button onClick= {() => { history.push("./components/UserFrontPage"); }}>
           <div className="imageParent"><img src={img2}/><p>Parent</p></div></button>
           </div>
   
           <div className="Admin">
-          <button onClick= {() => { history.push("./AdminFrontPage"); }}>
+          <button onClick= {() => { history.push("./components/AdminFrontPage"); }}>
           <div className="imageAdmin"><img src={img3}/><p>Admin</p></div></button>
           </div>
   

@@ -12,7 +12,6 @@ import AdminHome from './components/AdminHome';
  
 function App() {
      
- 
   return (
 
     <div className="App">
@@ -22,11 +21,13 @@ function App() {
    
         <Switch>
 
+        <Route exact path="/" component={FrontPage}/>
+        <Route exact path="/components/FrontPage" component={FrontPage}/>
+
         <Route exact path="/components/Home" component={Home} />
         <Route exact path="/components/LoginForm" component={LoginForm} />
         <Route exact path="/components/SignupForm" component={SignupForm} />
         <Route exact path="/components/UserFrontPage" component={UserFrontPage} />
-        <Route exact path="/components/FrontPage" component={FrontPage}/>
         <Route exact path="/components/AdminFrontPage" component={AdminFrontPage}/>
         <Route exact path="/components/AdminloginForm" component={AdminLoginForm}/>
         <Route exact path="/components/AdminSignupForm" component={AdminSignupForm}/>

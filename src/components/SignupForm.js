@@ -8,7 +8,7 @@ import img4 from '../Images/children4.png';
 
 
 const schema = yup.object().shape({
-    username: yup.string().required(),
+    student_Name: yup.string().required(),
     password: yup.string().required().min(5),
 });
 
@@ -19,7 +19,7 @@ const content={
     inputs: [
         {
             label:"Student Name",
-            name: "student Name",
+            name: "student_Name",
             type: "text",
         },
         {

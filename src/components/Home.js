@@ -30,14 +30,13 @@ let history = useHistory();
 
 
 
-        <button onClick= {() => { history.push("./FrontPage"); }}>SignOut</button>
+        <button onClick= {() => { history.push("/"); }}>SignOut</button>
 
         <hr />
         
         <Switch>
           <Route path="/components/AttendanceReport" component={AttendanceReport} />
           <Route path="/components/EditDetails" component={EditDetails} />
-          <Route path="/components/Frontpage" component={FrontPage} />
 
 
         </Switch>
