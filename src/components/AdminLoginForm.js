@@ -47,7 +47,6 @@ function AdminLoginForm() {
     }
 
     return (
-    
     <div className="LoginForm">
         <form onSubmit={submitHandler}>
             <div className="form-inner">

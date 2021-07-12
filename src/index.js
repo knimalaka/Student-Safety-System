@@ -8,6 +8,7 @@ import './styles/UserFrontPage.css';
 import './styles/LoginForm.css';
 import './styles/Home.css';
 import './styles/UserSignupForm.css';
+import './styles/AdminSignupForm.css';
 
 ReactDOM.render(
   <React.StrictMode>
