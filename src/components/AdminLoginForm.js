@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import{ BrowserRouter as Router, Route, Link, NavLink, Switch} from "react-router-dom";
 import Home from './Home';
 import {useHistory} from "react-router-dom";
+import img5 from '../Images/children5.png';
  
 function AdminLoginForm() {
 
@@ -66,7 +67,12 @@ function AdminLoginForm() {
                 </div>
                 <input type="submit" value="LOGIN" />
             </div>
-        </form>        
+        </form>  
+
+        <div className="AdminLoginImage">
+        <img src={img5}/>
+        </div>
+
     </div>
         
     )
