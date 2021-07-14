@@ -1,94 +1,11 @@
-
 .Home{
-    align-items: center;
-    justify-content: center;
+    background-color: #1f5156;
+    height: 80px;
     display: flex;
-    display: block;
-    position: absolute;
-    top: 325px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 20;
 }
-
-.Navbar3{
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #5499C7 ;
-    background-size: 200%;
-    background-position: 0%;
-    transition: 0.4s;
-    color: #17202A;
-    font-weight: 700;
-    cursor: pointer;
-    position: absolute;
-    right: 340px;
-   }
-
-.Navbar4{
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #5499C7 ;
-    background-size: 200%;
-    background-position: 0%;
-    transition: 0.4s;
-    color: #17202A;
-    font-weight: 700;
-    cursor: pointer;
-    position: absolute;
-    right: 190px;
-   }
-
-.Navbar1{
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #5499C7 ;
-    background-size: 200%;
-    background-position: 0%;
-    transition: 0.4s;
-    color: #17202A;
-    font-weight: 700;
-    cursor: pointer;
-    position: absolute;
-    right: 27px;
- }
-
-.Navbar2{
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #5499C7 ;
-    background-size: 200%;
-    background-position: 0%;
-    transition: 0.4s;
-    color: #17202A;
-    font-weight: 700;
-    cursor: pointer;
-    position: absolute;
-    right: -90px;
- }
-
-.Home button{
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: black ;
-    background-size: 200%;
-    background-position: 0%;
-    transition: 0.4s;
-    color: azure;
-    font-weight: 700;
-    cursor: pointer; 
-    position:absolute;
-    right: -200px;
- }
-
- .AttendaceReport h2{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    display: block;
-    position: absolute;
-    top: 400px;
- }
- 
