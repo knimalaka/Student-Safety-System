@@ -9,6 +9,7 @@ import AdminFrontPage from './components/AdminFrontpage';
 import AdminLoginForm from './components/AdminLoginForm';
 import AdminSignupForm from './components/AdminSignupForm';
 import AdminHome from './components/AdminHome';
+
  
 function App() {
      
@@ -18,7 +19,7 @@ function App() {
 
 
       <Router>
-   
+
         <Switch>
 
         <Route exact path="/" component={FrontPage}/>
@@ -32,8 +33,10 @@ function App() {
         <Route exact path="/components/AdminloginForm" component={AdminLoginForm}/>
         <Route exact path="/components/AdminSignupForm" component={AdminSignupForm}/>
         <Route exact path="/components/AdminHome" component={AdminHome}/>
+
  
         </Switch>
+
             
       </Router>
         

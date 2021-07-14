@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import{ BrowserRouter as Router, Route, Link, NavLink, Switch} from "react-router-dom";
 import AttendanceReport from "./AttendanceReport";
-import EditDetails from "./EditDetails"; 
+import EditDetails from "./pages/EditDetails"; 
 import Settings from './Settings';
 import FrontPage from "./FrontPage";
 import {useHistory} from "react-router-dom";
@@ -13,53 +13,57 @@ let history = useHistory();
 
     return(
 
-        <Router>
-              
         <div className="Home">
+        <Router>
 
         <div className="Nav-container">
 
         <NavLink exact activeClassName="active" 
         to="/components/Home" className="Nav-logo">Student Safety System</NavLink>
-      <ul>
-        <li>
+      <ul className="Nav-menu">
+        <li className="Nav-item">
         <NavLink exact activeClassName="active" 
-        to="/components/Home" className="Nav-home">Home</NavLink>
+        to="/components/Home" className="Nav-links">Home</NavLink>
         </li>
 
-        <li>
-        <NavLink exact activeClassName="active" to="/components/AttendanceReport" 
-        className="Nav-attendanceReport">AttendaceReport</NavLink>
+        <li className="Nav-item">
+        <NavLink exact activeClassName="active" 
+        to="/components/AttendanceReport" className="Nav-links">AttendaceReport</NavLink>
         </li>
 
-        <li>
+        <li className="Nav-item">
         <NavLink exact activeClassName="active" 
-        to="/components/EditDetails" className="Nav-editDetails">EditDetails</NavLink>
+        to="/components/pages/EditDetails" className="Nav-links">EditDetails</NavLink>
         </li>
 
-        <li>
+        <li className="Nav-item">
         <NavLink exact activeClassName="active" 
-        to="/components/Settings" className="Nav-settings">Settings</NavLink>
+        to="/components/Settings" className="Nav-links">Settings</NavLink>
         </li>
-      </ul>  
-        </div>
 
         <button onClick= {() => { history.push("/"); }}>SignOut</button>
 
+      </ul>  
+        </div>
+
+
+
         <hr />
-        
+
+
+
         <Switch>
-          <Route path="/components/AttendanceReport" component={AttendanceReport} />
-          <Route path="/components/EditDetails" component={EditDetails} />
+          <Route exact path="/" component={Home} />
+          <Route path="/components/pages/EditDetails" component={EditDetails} />
           <Route path="/components/Settings" component={Settings} />
-
-
+          <Route exact path="/components/AttendanceReport" component={AttendanceReport} />
 
         </Switch>
-        </div>
+
     
   </Router>
-  
+  </div>
+
 
        
     )
