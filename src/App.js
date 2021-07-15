@@ -1,16 +1,20 @@
-import React, {useState} from 'react';
+import React from 'react';
 import{ BrowserRouter as Router, Route, Link, NavLink, Switch} from "react-router-dom";
 import LoginForm from './components/LoginForm';
 import SignupForm from './components/SignupForm';
-import Home from './components/Home';
 import UserFrontPage from './components/UserFrontPage';
 import FrontPage from './components/FrontPage';
 import AdminFrontPage from './components/AdminFrontpage';
 import AdminLoginForm from './components/AdminLoginForm';
 import AdminSignupForm from './components/AdminSignupForm';
 import AdminHome from './components/AdminHome';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
+import Settings from './components/Settings';
+import AttendanceReport from './components/AttendanceReport';
+import EditDetails from './components/pages/EditDetails';
 
- 
+
 function App() {
      
   return (
@@ -20,12 +24,10 @@ function App() {
 
       <Router>
 
+
         <Switch>
 
         <Route exact path="/" component={FrontPage}/>
-        <Route exact path="/components/FrontPage" component={FrontPage}/>
-
-        <Route exact path="/components/Home" component={Home} />
         <Route exact path="/components/LoginForm" component={LoginForm} />
         <Route exact path="/components/SignupForm" component={SignupForm} />
         <Route exact path="/components/UserFrontPage" component={UserFrontPage} />
@@ -34,12 +36,21 @@ function App() {
         <Route exact path="/components/AdminSignupForm" component={AdminSignupForm}/>
         <Route exact path="/components/AdminHome" component={AdminHome}/>
 
- 
+        <NavBar />
+
+        <div className="pages">
+        <Switch>
+        <Route exact path="/components/Home" component={Home} />
+        <Route path="/components/pages/EditDetails" component={EditDetails} />          
+        <Route path="/components/Settings" component={Settings} />
+        <Route path="/components/AttendanceReport" component={AttendanceReport} />
+        </Switch>
+        </div>
+
         </Switch>
 
-            
       </Router>
-        
+            
     </div>
 
   );
