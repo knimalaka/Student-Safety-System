@@ -1,16 +1,22 @@
-import React, {useState} from "react";
+import React, {useState, Component} from "react";
 import {useHistory} from "react-router-dom";
 import img1 from '../Images/Main.png';
 import img2 from '../Images/parent4.png';
 import img3 from '../Images/parent2.png';
+import NavBar from "./NavBar";
+import { render } from "@testing-library/react";
 
-function FrontPage() {  
-    
-      let history = useHistory();
+
+
+export default function FrontPage(){
+
+
+let history = useHistory();
 
       return(
           
         <div className="FrontPage">  
+
 
         <link href="//db.onlinewebfonts.com/c/3907276073752a03016016622e01a154?family=Cassannet+Regular" 
         rel="stylesheet" type="text/css"/>
@@ -28,12 +34,12 @@ function FrontPage() {
           </div>
   
           <div className="Parent">
-          <button onClick= {() => { history.push("./components/UserFrontPage"); }}>
+          <button onClick= {() => {history.push("./components/UserFrontPage"); }}>
           <div className="imageParent"><img src={img2}/><p>Parent</p></div></button>
           </div>
   
           <div className="Admin">
-          <button onClick= {() => { history.push("./components/AdminFrontPage"); }}>
+          <button onClick= {() => {history.push("./components/AdminFrontPage"); }}>
           <div className="imageAdmin"><img src={img3}/><p>Admin</p></div></button>
           </div>
   
@@ -41,6 +47,6 @@ function FrontPage() {
   
     )
   }
+
   
-export default FrontPage;
   

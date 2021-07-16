@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import{ BrowserRouter as Router, Route, Link, NavLink, Switch} from "react-router-dom";
 import LoginForm from './components/LoginForm';
 import SignupForm from './components/SignupForm';
@@ -15,19 +15,27 @@ import AttendanceReport from './components/AttendanceReport';
 import EditDetails from './components/pages/EditDetails';
 
 
-function App() {
-     
+export default class App extends Component {
+
+  constructor(props){
+    super(props);
+      this.state = {
+        isNavBarHidden: false
+      };
+    }
+
+  render(){
   return (
 
     <div className="App">
 
+  <Router>
 
-      <Router>
-
-
+  { (this.state.isNavBarHidden) ? null : <NavBar /> }
+          
         <Switch>
 
-        <Route exact path="/" component={FrontPage}/>
+        <Route exact path="/" component={FrontPage}  />
         <Route exact path="/components/LoginForm" component={LoginForm} />
         <Route exact path="/components/SignupForm" component={SignupForm} />
         <Route exact path="/components/UserFrontPage" component={UserFrontPage} />
@@ -36,16 +44,11 @@ function App() {
         <Route exact path="/components/AdminSignupForm" component={AdminSignupForm}/>
         <Route exact path="/components/AdminHome" component={AdminHome}/>
 
-        <NavBar />
 
-        <div className="pages">
-        <Switch>
         <Route exact path="/components/Home" component={Home} />
         <Route path="/components/pages/EditDetails" component={EditDetails} />          
         <Route path="/components/Settings" component={Settings} />
         <Route path="/components/AttendanceReport" component={AttendanceReport} />
-        </Switch>
-        </div>
 
         </Switch>
 
@@ -55,5 +58,4 @@ function App() {
 
   );
 }
-
-export default App;
+}
