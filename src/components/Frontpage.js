@@ -7,7 +7,6 @@ import NavBar from "./NavBar";
 import { render } from "@testing-library/react";
 
 
-
 export default function FrontPage(){
 
 

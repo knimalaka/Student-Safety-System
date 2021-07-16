@@ -1,14 +1,16 @@
 import React, {useState} from 'react';
+import NavBar from './NavBar';
 
 function Settings(){
 
 
     return( 
-        
-        <div className="Settings">
-        <h2>Settings Here</h2>
-        
-        </div>
+        <>
+        <NavBar />
+            <div className="Settings">
+                <h2>Settings Here</h2>
+            </div>
+        </>
     )
 }
 

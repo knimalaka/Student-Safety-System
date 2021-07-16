@@ -4,12 +4,14 @@ import {useHistory} from "react-router-dom";
 import Home from './Home';
 import Settings from './Settings';
 import AttendanceReport from './AttendanceReport';
-import EditDetails from './pages/EditDetails';
+import EditDetails from './EditDetails';
 
 
 function NavBar(){
-
     let history = useHistory();
+
+    const [click, setClick] = useState(false);
+    const handleClick = () => setClick(!click);
 
     return(
       <>  
@@ -18,35 +20,36 @@ function NavBar(){
                 <div className="Nav-container">
 
                     <NavLink exact activeClassName="active" 
-                    to="/components/Home" className="Nav-logo">Student Safety System</NavLink>
+                    to="/components/Home" className="Nav-logo">STUDENT SAFETY SYTEM</NavLink>
             
-                    <ul className="Nav-menu">
+                    <ul className= {click ? "Nav-menu active" : "Nav-menu" }>
 
                         <li className="Nav-item">
                         <NavLink exact  activeClassName="active" 
-                        to="/components/Home" className="Nav-links">Home</NavLink>
+                        to="/components/Home" className="Nav-links" onClick={handleClick}>Home</NavLink>
                         </li>
 
                         <li className="Nav-item">
                         <NavLink exact activeClassName="active" 
-                        to="/components/AttendanceReport" className="Nav-links">AttendaceReport</NavLink>
+                        to="/components/AttendanceReport" className="Nav-links" onClick={handleClick}>AttendaceReport</NavLink>
                         </li>
 
                         <li className="Nav-item">
                         <NavLink exact activeClassName="active" 
-                        to="/components/pages/EditDetails" className="Nav-links">EditDetails</NavLink>
+                        to="/components/EditDetails" className="Nav-links" onClick={handleClick}>EditDetails</NavLink>
                         </li>
 
                         <li className="Nav-item">
                         <NavLink exact activeClassName="active" 
-                        to="/components/Settings" className="Nav-links">Settings</NavLink>
+                        to="/components/Settings" className="Nav-links" onClick={handleClick}>Settings</NavLink>
                         </li>
 
                     <button onClick= {() => { history.push("/"); }}>SignOut</button>
                 </ul>  
+                <div className="Nav-icon" onClick={handleClick}>
+                    <i className={click ? "fas fa-times": "fas fa-bars"}></i>
                 </div>
-
-
+                </div>
             </nav>
         </>
     )

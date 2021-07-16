@@ -1,6 +1,4 @@
 import React, {useState} from 'react'; 
-import{ BrowserRouter as Router, Route, Link, NavLink, Switch} from "react-router-dom";
-import Home from './Home';
 import {useHistory} from "react-router-dom";
 import img1 from '../Images/children3.png';
  

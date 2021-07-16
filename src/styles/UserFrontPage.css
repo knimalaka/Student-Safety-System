@@ -31,9 +31,7 @@
 
 .UserFrontPage h2{
     font-size: 30px;
-    font-family: "Cassannet Regular"; src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot"); src: url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.eot?#iefix")
-    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.woff") format("woff"), 
-    url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3907276073752a03016016622e01a154.svg#Cassannet Regular") format("svg"); 
+    font-family: "Cassannet Regular"; 
     font-weight: 500;  
     color: #00004d;
     top: 200px;

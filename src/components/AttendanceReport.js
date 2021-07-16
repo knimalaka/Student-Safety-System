@@ -1,14 +1,16 @@
 import React, {useState} from 'react';
+import NavBar from './NavBar';
 
 function AttendanceReport(){
 
 
     return( 
-        
-        <div className="AttendanceReport">
-        <h2>AttendanceReport Here</h2>
-        
-        </div>
+        <>
+        <NavBar />
+            <div className = "AttendanceReport">         
+                <h2>Attendance Report Here</h2>
+            </div>
+        </>
     )
 }
 

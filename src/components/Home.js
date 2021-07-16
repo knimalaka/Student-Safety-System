@@ -1,13 +1,16 @@
 import React, {useState} from 'react';
+import { Router } from 'react-router';
+import NavBar from './NavBar';
 
-const Home = () => {
+function Home (){
 
   return(
-
-    <div className="Home">
-    <h2>Home</h2>
-    </div>
-
+    <>
+    <NavBar />
+      <div className="Home">
+        <h2>Home</h2>
+      </div>
+    </>
   )
 }
 
