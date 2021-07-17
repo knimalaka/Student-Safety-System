@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import{ BrowserRouter as Router, Route, Link, NavLink, Switch} from "react-router-dom";
 import {useHistory} from "react-router-dom";
+import img1 from '../Images/Main.png';
+
 import Home from './Home';
 import Settings from './Settings';
 import AttendanceReport from './AttendanceReport';
@@ -20,7 +22,8 @@ function NavBar(){
                 <div className="Nav-container">
 
                     <NavLink exact activeClassName="active" 
-                    to="/components/Home" className="Nav-logo">STUDENT SAFETY SYTEM</NavLink>
+                    to="/components/Home" className="Nav-logo"><div className="Nav-logo-logo"><img src={img1}></img>
+                    <p>STUDENT SAFETY SYTEM</p></div></NavLink>
             
                     <ul className= {click ? "Nav-menu-active" : "Nav-menu" }>
 
