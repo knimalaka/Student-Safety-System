@@ -13,6 +13,10 @@ import './styles/Home.css';
 import './styles/AttendanceReport.css';
 import './styles/EditDetails.css';
 import './styles/Settings.css';
+import './styles/AdminHome.css';
+import './styles/AdminAttendanceReport.css';
+import './styles/MarkAttendance.css';
+import './styles/AdminSettings.css';
 
 ReactDOM.render(
   <React.StrictMode>

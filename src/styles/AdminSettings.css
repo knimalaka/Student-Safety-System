@@ -1,0 +1,9 @@
+.AdminSettings{
+    background: url(../Images/Background.jpg) no-repeat center fixed;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+   }

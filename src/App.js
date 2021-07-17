@@ -12,10 +12,11 @@ import Home from './components/Home';
 import Settings from './components/Settings';
 import AttendanceReport from './components/AttendanceReport';
 import EditDetails from './components/EditDetails';
-
+import AdminAttendanceReport from './components/AdminAttendanceReport';
+import AdminSettings from './components/AdminSettings';
+import MarkAttendance from './components/MarkAttendance';
 
 export default function App() {
-
 
   return (
 
@@ -32,11 +33,14 @@ export default function App() {
           <Route exact path="/components/AdminFrontPage" component={AdminFrontPage}/>
           <Route exact path="/components/AdminloginForm" component={AdminLoginForm}/>
           <Route exact path="/components/AdminSignupForm" component={AdminSignupForm}/>
-          <Route exact path="/components/AdminHome" component={AdminHome}/>
           <Route exact path="/components/Home" component={Home} />
           <Route path="/components/EditDetails" component={EditDetails} />          
           <Route path="/components/Settings" component={Settings} />
           <Route path="/components/AttendanceReport" component={AttendanceReport} />
+          <Route exact path="/components/AdminHome" component={AdminHome}/>
+          <Route path="/components/AdminAttendanceReport" component={AdminAttendanceReport} />
+          <Route exact path="/components/AdminSettings" component={AdminSettings}/>
+          <Route exact path="/components/MarkAttendance" component={MarkAttendance}/>
 
         </Switch>
 

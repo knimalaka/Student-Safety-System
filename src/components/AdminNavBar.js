@@ -3,7 +3,7 @@ import{ BrowserRouter as Router, Route, Link, NavLink, Switch} from "react-route
 import {useHistory} from "react-router-dom";
 import img1 from '../Images/Main.png';
 
-function NavBar(){
+function AdminNavBar(){
     let history = useHistory();
 
     const [click, setClick] = useState(false);
@@ -16,34 +16,34 @@ function NavBar(){
                 <div className="Nav-container">
 
                     <NavLink exact activeClassName="active" 
-                    to="/components/Home" className="Nav-logo">
+                    to="/components/AdminHome" className="Nav-logo">
                     <div><img src={img1}/><p>STUDENT SAFETY SYTEM</p></div></NavLink>
             
                     <ul className= {click ? "Nav-menu-active" : "Nav-menu" }>
 
                         <li className="Nav-item">
                         <NavLink exact  activeClassName="active" 
-                        to="/components/Home" className="Nav-links" onClick={handleClick}>Home</NavLink>
+                        to="/components/AdminHome" className="Nav-links" onClick={handleClick}>Home</NavLink>
                         </li>
 
                         <li className="Nav-item">
                         <NavLink exact activeClassName="active" 
-                        to="/components/AttendanceReport" className="Nav-links" onClick={handleClick}>AttendaceReport</NavLink>
+                        to="/components/AdminAttendanceReport" className="Nav-links" onClick={handleClick}>AttendaceReport</NavLink>
                         </li>
 
                         <li className="Nav-item">
                         <NavLink exact activeClassName="active" 
-                        to="/components/EditDetails" className="Nav-links" onClick={handleClick}>EditDetails</NavLink>
+                        to="/components/MarkAttendance" className="Nav-links" onClick={handleClick}>MarkAttendance</NavLink>
                         </li>
 
                         <li className="Nav-item">
                         <NavLink exact activeClassName="active" 
-                        to="/components/Settings" className="Nav-links" onClick={handleClick}>Settings</NavLink>
+                        to="/components/AdminSettings" className="Nav-links" onClick={handleClick}>Settings</NavLink>
                         </li>
                         
                         <li className="Nav-item">
                         <button activeClassName="active" 
-                        to="/components/Settings" className="Nav-links" onClick= {() => { history.push("/"); }}>SignOut</button>
+                        to="/components/AdminHome" className="Nav-links" onClick= {() => { history.push("/"); }}>SignOut</button>
                         </li>
 
                 </ul>  
@@ -56,4 +56,4 @@ function NavBar(){
     )
 }
 
-export default NavBar;
+export default AdminNavBar;
