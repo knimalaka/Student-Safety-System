@@ -1,7 +1,7 @@
 @import url(//db.onlinewebfonts.com/c/3907276073752a03016016622e01a154?family=Cassannet+Regular);
 
 .NavBar{
-    background-color: color;
+    background-color: #BDC3C7 ;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -31,6 +31,7 @@
     text-decoration: none;
     font-size: 2rem;
     flex-grow: 1;
+    padding: 30px;
 }
 
 .Nav-menu{
@@ -77,29 +78,48 @@
     display: none;
 }
 
+.NavBar button{
+    color: black;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 960px) {
     .Nav-menu{
         display: flex;
         flex-direction: column;
         width: 100%;
-        border-top: 1pxsolid #fff;
+        border-top: 1pxsolid #495867;
         position: absolute;
-        left: -110%;
-        top: 80px;
+        height: 50px;
         opacity: 1;
+        left: -110%;
     }    
 
-.Nav-menu .active{
-    background: #adafaea2;
+ .Nav-menu-active{
+    background-color: rgba(215, 219, 221,2);
     left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 80px;
+    position: absolute;
+
+}
+
+.Nav-item:hover:after{
+    width: 100%;
+    background: #495867;
 }
 
 .Nav-item .active{
     color: #495867;
     border: none;
+    font-weight: 50;
+    font-size: 25px;
 }
 
 .Nav-links{
@@ -117,7 +137,7 @@
     font-size: 1.8rem;
     cursor: pointer;
     color: #495867;
-      
+
 }
 
 }

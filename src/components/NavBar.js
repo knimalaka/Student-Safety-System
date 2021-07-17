@@ -22,7 +22,7 @@ function NavBar(){
                     <NavLink exact activeClassName="active" 
                     to="/components/Home" className="Nav-logo">STUDENT SAFETY SYTEM</NavLink>
             
-                    <ul className= {click ? "Nav-menu active" : "Nav-menu" }>
+                    <ul className= {click ? "Nav-menu-active" : "Nav-menu" }>
 
                         <li className="Nav-item">
                         <NavLink exact  activeClassName="active" 
@@ -43,8 +43,12 @@ function NavBar(){
                         <NavLink exact activeClassName="active" 
                         to="/components/Settings" className="Nav-links" onClick={handleClick}>Settings</NavLink>
                         </li>
+                        
+                        <li className="Nav-item">
+                        <button activeClassName="active" 
+                        to="/components/Settings" className="Nav-links" onClick= {() => { history.push("/"); }}>SignOut</button>
+                        </li>
 
-                    <button onClick= {() => { history.push("/"); }}>SignOut</button>
                 </ul>  
                 <div className="Nav-icon" onClick={handleClick}>
                     <i className={click ? "fas fa-times": "fas fa-bars"}></i>
