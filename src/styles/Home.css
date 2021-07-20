@@ -11,3 +11,29 @@
     display: flex;
     display: block;
    }
+
+.QRcode{
+    text-align: justify;
+    position: absolute;
+    width: 700px;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);  
+    margin-left: -50px;
+}
+
+.QRcode img{
+    margin-top: 180px;
+    width: 100px;
+    display: block;
+    margin-left: 50%;
+  }
+
+.QRdownload btn{
+    font-size: 30px;
+    font-family: "Cassannet Regular"; 
+    font-weight: 500;  
+    color: #00004d;
+    top: 200px;
+    margin-left: 50%;
+}

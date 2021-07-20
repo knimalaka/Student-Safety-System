@@ -14,8 +14,8 @@
 
 .UserFrontPageLogo{
     text-align: justify;
-    width: 700px;
     position: absolute;
+    width: 700px;
     left: 50%;
     top: 10%;
     transform: translate(-50%,-50%);  
