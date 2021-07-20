@@ -22,7 +22,6 @@ function Home (){
     <>
     <NavBar />
       <div className="Home">
-        <CardContent>
           <Grid container spacing={2}>
             <Grid className="QRcode" item xl={4} lg={4} md={6} sm={12} xs={12}>
             <h2>My QR code</h2>
@@ -45,7 +44,6 @@ function Home (){
             <Grid item xl={4} lg={4} md={6} sm={12} xs={12}></Grid>
             <Grid item xl={4} lg={4} md={6} sm={12} xs={12}></Grid>
           </Grid>
-        </CardContent>
       </div>
     </>
   )
