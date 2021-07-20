@@ -22,10 +22,11 @@ function Home (){
     <>
     <NavBar />
       <div className="Home">
-      <h2>Home</h2>
         <CardContent>
           <Grid container spacing={2}>
             <Grid className="QRcode" item xl={4} lg={4} md={6} sm={12} xs={12}>
+            <h2>My QR code</h2>
+
               <TextField label="Enter Text Here" onChange={(e) => setText(e.target.value)}/>
               <Button className="qrButton" variant="contained" 
               color="primary" onClick={() => generateQrCode()}>Generate</Button>

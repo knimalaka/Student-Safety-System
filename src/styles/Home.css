@@ -15,25 +15,41 @@
 .QRcode{
     text-align: justify;
     position: absolute;
+    display: block;
+    cursor: pointer;
     width: 700px;
     left: 50%;
-    top: 30%;
+    top: 15%;
     transform: translate(-50%,-50%);  
     margin-left: -50px;
 }
 
-.QRcode img{
-    margin-top: 180px;
-    width: 100px;
-    display: block;
-    margin-left: 50%;
-  }
-
-.QRdownload btn{
+.QRcode h2{
     font-size: 30px;
-    font-family: "Cassannet Regular"; 
     font-weight: 500;  
     color: #00004d;
-    top: 200px;
-    margin-left: 50%;
+    top: 100px;
+    margin-left: 26%;
+    position: absolute;
+    left: 70px;
+}
+
+.QRcode img{
+    margin-top: 80px;
+    width: 300px;
+    left: 26%;
+    position: absolute;
+  }
+
+.QRcode .QRdownload{
+    font-size: 14px;
+    font-family: "Cassannet Regular"; 
+    text-align: justify;
+    font-weight: 500;  
+    color: #fff;
+    top: 530px;
+    margin-left: 26%;
+    left: 150px;
+    position: absolute;
+    transform: translate(-50%,-50%);  
 }
