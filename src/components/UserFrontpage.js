@@ -20,6 +20,8 @@ function UserFrontPage(){
         <button onClick= {() => { history.push("./LoginForm"); }}>Login</button>
         </div>
 
+        <div className="UserFrontOr"><p>--------------- or ----------------</p></div>
+
         <div className="Signup">
         <button onClick= {() => { history.push("./SignupForm"); }}>Signup</button>
         </div>

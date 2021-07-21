@@ -86,17 +86,28 @@ form .form-inner input[type="submit"]{
     display: inline-block;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #2ECC71 ;
+    background-color: #fff ;
     background-size: 200%;
     background-position: 0%;
     transition: 0.4s;
-    color: #17202A;
+    color: #2ECC71;
     font-weight: 700;
     cursor: pointer;
     position: absolute;
     top: 350px;
-    left: 87px;
+    left: 0px;
+    width: 250px;
+    height: 35px;
+    border-radius: 25px;
+    border: solid;
+    border-width: 2px;
  }
+
+ form .form-inner input[type="submit"]:hover{
+    background-color: #2ECC71;
+    color: #fff;
+    border: none;
+}
 
 
 .error{
@@ -119,5 +130,6 @@ form .form-inner input[type="submit"]{
     transform: translate(-50%,-50%);  
     margin-left: 0px;
     width: 300px;
+    top: 700px;
         
  }

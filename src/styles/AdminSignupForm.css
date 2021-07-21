@@ -20,22 +20,33 @@
     margin-left: -50px;
 }
 
-.Adminbtn{
+.AdminSignupForm button{
     display: inline-block;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #2ECC71 ;
+    background-color: #fff ;
     background-size: 200%;
     background-position: 0%;
     transition: 0.4s;
-    color: #17202A;
-    font-weight: 520;
-    font-size: 15px;
+    color: #2ECC71;
+    font-weight: 700;
     cursor: pointer;
     position: absolute;
-    top: 620px;
-    left: 80px;
+    top: 600px;
+    left: 0px;
+    width: 250px;
+    height: 35px;
+    border-radius: 25px;
+    border: solid;
+    border-width: 2px;
 }
+
+.AdminSignupForm button:hover{
+    background-color: #2ECC71;
+    color: #fff;
+    border: none;
+}
+
 
 .AdminSignupImage img{
     margin-top: -550px;

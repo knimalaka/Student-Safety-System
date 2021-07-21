@@ -37,74 +37,136 @@
     top: 200px;
     margin-left: 50%;
 }
-.UserFrontPage .Login{
+.UserFrontPage .Login button{
     display: inline-block;
     padding: 7px 18px;
-    border-radius: 5px;
+    border-radius: 25px;
     background-color: #5499C7 ;
     background-size: 200%;
     background-position: 0%;
     transition: 0.4s;
-    color: #17202A;
-    font-weight: 700;
+    color: #fff;
+    font-weight: 500;
     cursor: pointer;
     position: absolute;
-    top: 300px;
+    top: 280px;
     margin-left: 50%;
-    left: -32px;
+    left: -100px;
+    width: 200px;
+    height: 32px;
+    text-align: center;
+    transform: translate(0%,50%);
+    position: absolute;
 }
 
-.UserFrontPage .AdminLogin{
+.UserFrontPage .Login button:hover{
+    background-color: #fff;
+    color: #5499C7;
+    border: 2px solid;
+}
+
+.UserFrontPage .AdminLogin button{
     display: inline-block;
     padding: 7px 18px;
-    border-radius: 5px;
+    border-radius: 25px;
     background-color: #5499C7 ;
     background-size: 200%;
     background-position: 0%;
     transition: 0.4s;
-    color: #17202A;
-    font-weight: 700;
+    color: #fff;
+    font-weight: 500;
     cursor: pointer;
     position: absolute;
-    top: 300px;
-    margin-left: 49%;
-    left: -40px;
+    top: 280px;
+    margin-left: 50%;
+    left: -100px;
+    width: 200px;
+    height: 32px;
+    text-align: center;
+    transform: translate(0%,50%);
+    position: absolute;
 }
 
-.UserFrontPage .Signup{
+.UserFrontPage .AdminLogin button:hover{
+    background-color: #fff;
+    color: #5499C7;
+    border: 2px solid;
+}
+
+.UserFrontPage .UserFrontOr p{
+    align-items: center;
+    justify-self: center;
+    position: absolute;
+    color: black;
+    top: 355px;
+    left: -94px;
+    transition: 0.4s;
+    margin-left: 50%;
+    display: block;
+    transform: translate(0%,50%);
+    color: #00004d;
+    opacity: 0.3;
+}
+
+.UserFrontPage .Signup button{
     display: inline-block;
     padding: 7px 18px;
-    border-radius: 5px;
-    background-color: #5499C7 ;
+    border-radius: 25px;
+    background-color: #fff ;
     background-size: 200%;
     background-position: 0%;
     transition: 0.4s;
-    color: #17202A;
-    font-weight: 700;
+    color:  #5499C7;
+    font-weight: 500;
     cursor: pointer;
     position: absolute;
     top: 400px;
     margin-left: 50%;
-    left: -35px;
+    left: -100px;
+    border:#5499C7 ;
+    border-style: solid;
+    border-width: 2px;
+    width: 200px;
+    text-align: center;
+    transform: translate(0%,50%);
 }
 
+.UserFrontPage .Signup button:hover{
+    background-color: #5499C7;
+    color: #fff;
+    border: none;
+}
+    
 
-.UserFrontPage .AdminSignup{
+
+.UserFrontPage .AdminSignup button{
     display: inline-block;
     padding: 7px 18px;
-    border-radius: 5px;
-    background-color: #5499C7 ;
+    border-radius: 25px;
+    background-color: #fff ;
     background-size: 200%;
     background-position: 0%;
     transition: 0.4s;
-    color: #17202A;
-    font-weight: 700;
+    color:  #5499C7;
+    font-weight: 500;
     cursor: pointer;
     position: absolute;
     top: 400px;
-    margin-left: 49%;
-    left: -40px;
+    margin-left: 50%;
+    left: -100px;
+    border:#5499C7 ;
+    border-style: solid;
+    border-width: 2px;
+    width: 200px;
+    text-align: center;
+    transform: translate(0%,50%);
 }
+
+.UserFrontPage .AdminSignup button:hover{
+    background-color: #5499C7;
+    color: #fff;
+    border: none;
+}    
 
 .UserFrontPageLogo2{
     text-align: justify;
