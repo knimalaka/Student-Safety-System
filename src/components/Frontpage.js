@@ -33,7 +33,7 @@ let history = useHistory();
           </div>
   
           <div className="Parent">
-          <button onClick= {() => {history.push("./components/User/UserFrontPage"); }}>
+          <button onClick= {() => {history.push("./components/UserFrontPage"); }}>
           <div className="imageParent"><img src={img2}/><p>Parent</p></div></button>
           </div>
   
