@@ -19,7 +19,7 @@
     cursor: pointer;
     width: 700px;
     left: 50%;
-    top: 15%;
+    top: 5%;
     transform: translate(-50%,-50%);  
     margin-left: -50px;
 }
@@ -52,4 +52,22 @@
     left: 150px;
     position: absolute;
     transform: translate(-50%,-50%);  
+}
+
+.QRcode .qrButton{
+    font-size: 14px;
+    font-family: "Cassannet Regular"; 
+    text-align: justify;
+    font-weight: 500;  
+    color: #fff;
+    top: 600px;
+    margin-left: 26%;
+    left: 150px;
+    position: absolute;
+    transform: translate(-50%,-50%);  
+}
+
+.QRcode .qrTextField{
+    top: 575px;
+    position: absolute;
 }
