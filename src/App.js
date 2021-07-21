@@ -1,9 +1,9 @@
 import React from 'react';
 import{ BrowserRouter as Router, Route, Link, NavLink, Switch} from "react-router-dom";
+import FrontPage from './components/FrontPage';
+import UserFrontPage from './components/UserFrontPage';
 import LoginForm from './components/LoginForm';
 import SignupForm from './components/SignupForm';
-import UserFrontPage from './components/UserFrontPage';
-import FrontPage from './components/FrontPage';
 import AdminFrontPage from './components/AdminFrontpage';
 import AdminLoginForm from './components/AdminLoginForm';
 import AdminSignupForm from './components/AdminSignupForm';
@@ -13,9 +13,11 @@ import Settings from './components/Settings';
 import AttendanceReport from './components/AttendanceReport';
 import AdminAttendanceReport from './components/AdminAttendanceReport';
 import AdminSettings from './components/AdminSettings';
-import ProfileSettings from './components/User/Settings/ProfileSettings';
-import SecuritySettings from './components/User/Settings/SecuritySettings';
-import AppVersion from './components/User/Settings/AppVersion';
+import ProfileSettings from './components/UserSettings/ProfileSettings';
+import SecuritySettings from './components/UserSettings/SecuritySettings';
+import AppVersion from './components/UserSettings/AppVersion';
+import AdminSecuritySettings from './components/AdminSettings/AdminSecuritySettings';
+
 
 
 export default function App() {
@@ -41,9 +43,10 @@ export default function App() {
           <Route exact path="/components/AdminHome" component={AdminHome}/>
           <Route path="/components/AdminAttendanceReport" component={AdminAttendanceReport} />
           <Route exact path="/components/AdminSettings" component={AdminSettings}/>
-          <Route exact path="/components/User/Settings/ProfileSettings" component={ProfileSettings}/>
-          <Route path="/components/User/Settings/SecuritySettings" component={SecuritySettings} />          
-          <Route path="/components/User/Settings/AppVersion" component={AppVersion} />          
+          <Route exact path="/components/UserSettings/ProfileSettings" component={ProfileSettings}/>
+          <Route path="/components/UserSettings/SecuritySettings" component={SecuritySettings} />          
+          <Route path="/components/UserSettings/AppVersion" component={AppVersion} />          
+          <Route path="/components/AdminSettings/AdminSecuritySettings" component={AdminSecuritySettings} />          
 
         </Switch>
 
