@@ -17,6 +17,7 @@ import './styles/AdminHome.css';
 import './styles/AdminAttendanceReport.css';
 import './styles/ProfileSettings.css';
 import './styles/AdminSettings.css';
+import './styles/AppVersion.css';
 
 ReactDOM.render(
   <React.StrictMode>
