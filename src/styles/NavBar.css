@@ -127,10 +127,15 @@
 
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 85%;
+    height: 1200%;
     top: 80px;
     position: absolute;
+}
 
+.Nav-item{
+    line-height: 15px;
+    margin-right: 1rem;
 }
 
 .Nav-item:hover:after{
@@ -143,6 +148,9 @@
     border: none;
     font-weight: 50;
     font-size: 25px;
+    background-color: #EBF0F2;
+    line-height: 13px;
+    margin-top: 4px;
 }
 
 .Nav-logo{
