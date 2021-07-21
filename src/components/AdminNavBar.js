@@ -33,11 +33,6 @@ function AdminNavBar(){
 
                         <li className="Nav-item">
                         <NavLink exact activeClassName="active" 
-                        to="/components/MarkAttendance" className="Nav-links" onClick={handleClick}>MarkAttendance</NavLink>
-                        </li>
-
-                        <li className="Nav-item">
-                        <NavLink exact activeClassName="active" 
                         to="/components/AdminSettings" className="Nav-links" onClick={handleClick}>Settings</NavLink>
                         </li>
                         

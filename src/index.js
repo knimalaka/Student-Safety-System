@@ -11,11 +11,11 @@ import './styles/UserSignupForm.css';
 import './styles/AdminSignupForm.css';
 import './styles/Home.css';
 import './styles/AttendanceReport.css';
-import './styles/EditDetails.css';
+import './styles/SecuritySettings.css';
 import './styles/Settings.css';
 import './styles/AdminHome.css';
 import './styles/AdminAttendanceReport.css';
-import './styles/MarkAttendance.css';
+import './styles/ProfileSettings.css';
 import './styles/AdminSettings.css';
 
 ReactDOM.render(

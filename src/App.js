@@ -14,7 +14,7 @@ import AttendanceReport from './components/AttendanceReport';
 import SecuritySettings from './components/SecuritySettings';
 import AdminAttendanceReport from './components/AdminAttendanceReport';
 import AdminSettings from './components/AdminSettings';
-import MarkAttendance from './components/MarkAttendance';
+import ProfileSettings from './components/ProfileSettings';
 
 export default function App() {
 
@@ -40,7 +40,7 @@ export default function App() {
           <Route exact path="/components/AdminHome" component={AdminHome}/>
           <Route path="/components/AdminAttendanceReport" component={AdminAttendanceReport} />
           <Route exact path="/components/AdminSettings" component={AdminSettings}/>
-          <Route exact path="/components/MarkAttendance" component={MarkAttendance}/>
+          <Route exact path="/components/ProfileSettings" component={ProfileSettings}/>
 
         </Switch>
 
