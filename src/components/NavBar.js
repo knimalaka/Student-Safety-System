@@ -33,11 +33,6 @@ function NavBar(){
 
                         <li className="Nav-item">
                         <NavLink exact activeClassName="active" 
-                        to="/components/EditDetails" className="Nav-links" onClick={handleClick}>EditDetails</NavLink>
-                        </li>
-
-                        <li className="Nav-item">
-                        <NavLink exact activeClassName="active" 
                         to="/components/Settings" className="Nav-links" onClick={handleClick}>Settings</NavLink>
                         </li>
                         

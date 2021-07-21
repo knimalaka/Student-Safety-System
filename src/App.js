@@ -11,7 +11,7 @@ import AdminHome from './components/AdminHome';
 import Home from './components/Home';
 import Settings from './components/Settings';
 import AttendanceReport from './components/AttendanceReport';
-import EditDetails from './components/EditDetails';
+import SecuritySettings from './components/SecuritySettings';
 import AdminAttendanceReport from './components/AdminAttendanceReport';
 import AdminSettings from './components/AdminSettings';
 import MarkAttendance from './components/MarkAttendance';
@@ -34,7 +34,7 @@ export default function App() {
           <Route exact path="/components/AdminloginForm" component={AdminLoginForm}/>
           <Route exact path="/components/AdminSignupForm" component={AdminSignupForm}/>
           <Route exact path="/components/Home" component={Home} />
-          <Route path="/components/EditDetails" component={EditDetails} />          
+          <Route path="/components/SecuritySettings" component={SecuritySettings} />          
           <Route path="/components/Settings" component={Settings} />
           <Route path="/components/AttendanceReport" component={AttendanceReport} />
           <Route exact path="/components/AdminHome" component={AdminHome}/>

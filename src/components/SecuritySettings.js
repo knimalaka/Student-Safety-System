@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import NavBar from './NavBar';
 
-function EditDetails(name,email,password){
+function SecuritySettings(name,email,password){
 
 
     return(      
         <> 
         <NavBar />
-            <div className = "EditDetails">         
+            <div className = "SecuritySettings">         
                 <h2>Edit Details Here</h2>
             </div>
         </>
@@ -15,5 +15,5 @@ function EditDetails(name,email,password){
     )
 }
 
-export default EditDetails;
+export default SecuritySettings;
 
