@@ -17,7 +17,7 @@ function NavBar(){
 
                     <NavLink exact activeClassName="active" 
                     to="/components/Home" className="Nav-logo">
-                    <div><img src={img1}/><p>STUDENT SAFETY SYTEM</p></div></NavLink>
+                    <div><img src={img1}/><p>STUDENT SAFETY</p></div></NavLink>
             
                     <ul className= {click ? "Nav-menu-active" : "Nav-menu" }>
 
