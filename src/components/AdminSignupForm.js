@@ -85,9 +85,11 @@ console.log(errors);
                   </div>
                 );
             })}
-            <button className="Adminbtn" type="SUBMIT">
+            <div className="Adminbtn" >
+            <button type="SUBMIT">
                 SUBMIT
             </button>     
+            </div>
         </div>      
         </form>
 
