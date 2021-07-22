@@ -27,7 +27,7 @@ function renderAttendance(attendance,index){
         <>
         <NavBar />
             <div className = "AttendanceReport">         
-                <h2>Attendance Report Here</h2>
+                <h2>Attendance Report</h2>
                 <br/>
                 <ReactBootStrap.Table striped bordered hover>
                     <thead>
