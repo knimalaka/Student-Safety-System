@@ -28,11 +28,6 @@ const content={
             type: "text",
         },
         {
-            label: 'Address',
-            name: 'address',
-            type: "text",
-        },
-        {
             label: 'Email addresss',
             name: 'email address',
             type: "email",
@@ -40,7 +35,7 @@ const content={
         {
             label: 'Phone Number',
             name: 'phone Number',
-            type: PhoneInput,
+            type: "text",
         },
         {
             label: 'Password',
@@ -70,8 +65,7 @@ console.log(errors);
                 <div key={key}>
                     <p>
                         <label className="label">{input.label}</label>
-                    </p>
-                    <p>
+ 
                     <div className="form-group">
 
                         <input 

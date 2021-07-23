@@ -38,7 +38,7 @@ function AdminNavBar(){
                         
                         <li className="Nav-item">
                         <button activeClassName="active" 
-                        to="/components/AdminHome" className="Nav-links" onClick= {() => { history.push("/"); }}>SignOut</button>
+                        to="/components/AdminHome" className="Nav-links-button" onClick= {() => { history.push("/"); }}>SignOut</button>
                         </li>
 
                 </ul>  

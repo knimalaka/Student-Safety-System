@@ -77,6 +77,10 @@
     margin-right: 1rem;
 }
 
+.Nav-item :hover{
+    color: #fff;
+}
+
 .Nav-item:after{
     content: "";
     display: block;
@@ -124,7 +128,6 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
-
     display: flex;
     flex-direction: column;
     width: 85%;
@@ -135,7 +138,13 @@
 
 .Nav-item{
     line-height: 15px;
-    margin-right: 1rem;
+    margin-right: 2.8rem;
+    margin-left: 1rem;
+    display: block;
+}
+
+.Nav-item :hover{
+    color: #757c82;
 }
 
 .Nav-item:hover:after{
@@ -192,12 +201,17 @@
 .Nav-icon{
     display: block;
     position: absolute;
-    top: 0;
+    top: -5px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
     color: #495867;
+}
+
+.Nav-links-button{
+    padding: 1.5rem;
+    color: #757c82;
 }
 
 }

@@ -38,7 +38,7 @@ function NavBar(){
                         
                         <li className="Nav-item">
                         <button activeClassName="active" 
-                        to="/components/Settings" className="Nav-links" onClick= {() => { history.push("/"); }}>SignOut</button>
+                        to="/components/Settings" className="Nav-links-button" onClick= {() => { history.push("/"); }}>SignOut</button>
                         </li>
 
                 </ul>  

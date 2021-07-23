@@ -18,8 +18,13 @@ const content={
 
     inputs: [
         {
-            label:"Student Name",
-            name: "student_Name",
+            label:"First Name",
+            name: "first_Name",
+            type: "text",
+        },
+        {
+            label: 'Second Name',
+            name: 'second_Name',
             type: "text",
         },
         {
@@ -28,37 +33,27 @@ const content={
             type: "text",
         },
         {
-            label: 'Class (Ex:1A)',
+            label: 'Class (Ex:1A) ',
             name: 'class',
             type: "text",
         },
         {
-            label: 'Date of birth',
-            name: 'date of birth',
-            type: "date",
-        },
-        {
-            label: 'Address',
-            name: 'address',
-            type: "text",
-        },
-        {
-            label: 'Email addresss',
-            name: 'email address',
+            label: 'Email ',
+            name: 'email',
             type: "email",
         },
         {
-            label: 'Parent Name',
+            label: 'Parent Name ',
             name: 'parent Name',
             type: "text",
         },
         {
-            label: 'Phone Number',
+            label: "Parent Phone Number ",
             name: 'phone Number',
-            type: PhoneInput,
+            type: "text",
         },
         {
-            label: 'Password',
+            label: 'Password ',
             name: 'password',
             type: "password",
         },
@@ -74,21 +69,18 @@ console.log(errors);
 
     return(
 
-        <div className="UserSignupForm">
-        <form  onSubmit={handleSubmit(onSubmit)}>
+    <div className="SignupForm">
+      <form  onSubmit={handleSubmit(onSubmit)}>
         <div className="form-inner">
 
- 
         <h2>Signup</h2>
             {content.inputs.map((input, key) => {
                 return( 
-                <div key={key}>
+                <div className="form-group" key={key}>
                     <p>
                         <label className="label">{input.label}</label>
-                    </p>
-                    <p>
-                    <div className="form-group">
 
+                    <div className="form-inner">
                         <input 
                         name={input.name} 
                         className="input"
@@ -98,19 +90,22 @@ console.log(errors);
                     </div>    
                     </p>
                   </div>
-                );
+                ); 
             })}
-            <button className="btn" type="SUBMIT">
-                SUBMIT
-            </button>     
-        </div>      
+
+                <button className="btn" type="SUBMIT">
+                    SUBMIT
+                </button>  
+
+            </div>      
         </form>
 
         <div className="SignupImage">
         <img src={img4}/>
         </div>
 
-        </div>
+    </div>
+
     );
 };
 

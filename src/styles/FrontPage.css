@@ -92,6 +92,9 @@
     margin-left: -70px;
   }
 
+.Parent:hover{
+    top: 64%;
+}
   
 .imageParent{
     text-align: justify;
@@ -122,8 +125,6 @@
      margin-top: -20px;
  }
 
-
-
  .Admin{
     text-align: justify;
     position: absolute;
@@ -133,8 +134,11 @@
     margin-left: 100px;  
    }
 
-
-  .imageAdmin{
+.Admin:hover{
+    top: 64%;
+}
+  
+.imageAdmin{
     text-align: justify;
     width: 150px;
     position: absolute;

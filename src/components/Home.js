@@ -40,10 +40,6 @@ function Home (){
               <Button className="QRdownload" variant="contained" 
               color="primary" href={imageUrl} download>Download</Button>
             </Grid>
-            <Grid item xl={4} lg={4} md={6} sm={12} xs={12}></Grid>
-            <Grid item xl={4} lg={4} md={6} sm={12} xs={12}></Grid>
-            
-
           </Grid>
       </div>
     </>

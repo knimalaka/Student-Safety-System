@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import NavBar from './NavBar';
+import NavBar from './AdminNavBar';
 import * as ReactBootStrap from "react-bootstrap";
 
 function AttendanceReport(){

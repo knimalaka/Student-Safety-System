@@ -53,15 +53,20 @@ function LoginForm() {
                 {(error != "") ? (<div className="error">{error}</div>): ""}
 
                 <div className="form-group">
-                    <label htmlFor="email">Email: </label>
-                    <input type="email" name="email" id="email" onChange={e => setDetails({...details, email: e.target.value})} value={details.email}/>
+                    <label htmlFor="email">Email</label>
+                    <input type="email" name="email" id="email" onChange={e => 
+                    setDetails({...details, email: e.target.value})} value={details.email}/>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="password">password:</label>
-                    <input type="password" name="password" id="password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password}/>
+                    <label htmlFor="password">Password</label>
+                    <input type="password" name="password" id="password" onChange={e => 
+                    setDetails({...details, password: e.target.value})} value={details.password}/>
                 </div>
                 
+                <div className="form-group">
                 <input type="submit" value="LOGIN" />
+                </div>
+
             </div>
         </form> 
 

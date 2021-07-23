@@ -45,13 +45,25 @@
     font-size: 14px;
     font-family: "Cassannet Regular"; 
     text-align: justify;
-    font-weight: 500;  
+    font-weight: 600px;  
     color: #fff;
+    background-color: #1A5276;
     top: 530px;
     margin-left: 26%;
     left: 150px;
     position: absolute;
-    transform: translate(-50%,-50%);  
+    transform: translate(-50%,-50%);
+    border-radius: 25px;  
+    width: 15rem;
+}
+
+.QRcode .QRdownload:hover{
+    color: #1A5276;
+    background-color: #BDC3C7;
+    font-weight: 600px;  
+    border-color: #1A5276;
+    border: solid;
+
 }
 
 .QRcode .qrButton{
@@ -64,10 +76,15 @@
     margin-left: 26%;
     left: 150px;
     position: absolute;
-    transform: translate(-50%,-50%);  
+    transform: translate(-50%,-50%);
+    border-radius: 25px;  
+
+    display: ;
 }
 
 .QRcode .qrTextField{
     top: 575px;
     position: absolute;
+
+    display: ;
 }

@@ -17,13 +17,13 @@ function UserFrontPage(){
         </div>
 
         <div className="Login">
-        <button onClick= {() => { history.push("./LoginForm"); }}>Login</button>
+        <button onClick= {() => { history.push("./LoginForm"); }}><span>Login</span></button>
         </div>
 
         <div className="UserFrontOr"><p>--------------- or ----------------</p></div>
 
         <div className="Signup">
-        <button onClick= {() => { history.push("./SignupForm"); }}>Signup</button>
+        <button onClick= {() => { history.push("./SignupForm"); }}><span>Signup</span></button>
         </div>
 
         <link href="//db.onlinewebfonts.com/c/3907276073752a03016016622e01a154?family=Cassannet+Regular" 
