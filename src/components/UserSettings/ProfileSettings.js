@@ -3,7 +3,6 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import 'react-phone-number-input/style.css';
-import PhoneInput from 'react-phone-number-input';  
   
 const schema = yup.object().shape({
   student_Name: yup.string().required(),
@@ -21,34 +20,29 @@ function ProfileSettings(){
             type: "password",
           },
           {
-              label:"Student Name",
-              name: "student_Name",
+              label:"First Name",
+              name: "first_Name",
               type: "text",
           },
+          {
+            label: 'Second Name',
+            name: 'second_name',
+            type: "text",
+            },
           {
               label: 'Class (Ex:1A)',
               name: 'class',
               type: "text",
           },
           {
-              label: 'Date of birth',
-              name: 'date of birth',
-              type: "date",
-          },
-          {
-              label: 'Address',
-              name: 'address',
-              type: "text",
-          },
-          {
-              label: 'Email addresss',
-              name: 'email address',
+              label: 'Email',
+              name: 'email',
               type: "email",
           },
           {
               label: 'Phone Number',
               name: 'phone Number',
-              type: PhoneInput,
+              type: "text",
           }
 
       ],
@@ -63,28 +57,25 @@ const {register, handleSubmit,errors} = useForm({
   
     return(
   
-      <div className="UserSignupForm">
-
-        <form  onSubmit={handleSubmit(onSubmit)}>
+      <div className="ProfileSettings">
+        <formp  onSubmit={handleSubmit(onSubmit)}>
         <div className="form-inner">
           <div className="profileSettingsh2">
           <h2>Edit Details</h2>
           </div>
               {content.inputs.map((input, key) => {
                   return( 
-                  <div key={key}>
+                  <div className="form-group" key={key}>
                       <p>
                           <label className="label">{input.label}</label>
-                      </p>
-                      <p>
-                      <div className="form-group">
-  
-                          <input 
+
+                      <div >
+                        <input 
                           name={input.name} 
                           className="input"
                           type={input.type}
                           {...register(input.label)}
-                          />
+                        />
                       </div>    
                       </p>
                     </div>
@@ -96,7 +87,7 @@ const {register, handleSubmit,errors} = useForm({
               </button>     
               </div>
           </div>      
-          </form>
+          </formp>
   
           </div>
       );

@@ -25,7 +25,7 @@ function AdminHome(){
     <Grid container spacing={2}>
       <Grid item xl={4} lg={4} md={6} sm={12} xs={12}>
         <h2>Mark Attendance Here</h2>
-        <QrReader 
+        <QrReader className="QrReader"
         delay={300}
         onError={handleErrorWebCam}
         onScan={handleScanWebCam}

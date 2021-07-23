@@ -80,7 +80,7 @@ console.log(errors);
                     <p>
                         <label className="label">{input.label}</label>
 
-                    <div className="form-inner">
+                    <div >
                         <input 
                         name={input.name} 
                         className="input"

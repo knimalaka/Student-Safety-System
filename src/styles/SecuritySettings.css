@@ -6,8 +6,7 @@
     height: 100%;
     display: block;
     position: relative;
-   }
-
+}
    
 formp{
     background: url(../Images/Background.jpg) no-repeat center fixed;
@@ -24,8 +23,6 @@ formp{
     position: relative;
     top: 100px;
 }
-
-
 
 formp .form-inner h2{
     color: #17202A;
@@ -94,6 +91,7 @@ formp .form-inner input[type="submitPassword"]{
     transition: 0.4s;
     color: #CB4335 ;
     font-weight: 500;
+    font-size: 14px;
     cursor: pointer;
     margin-top: 30px;
     left: 0px;
