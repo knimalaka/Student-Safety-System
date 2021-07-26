@@ -28,7 +28,7 @@ function NavBar(){
 
                         <li className="Nav-item">
                         <NavLink exact activeClassName="active" 
-                        to="/components/AttendanceReport" className="Nav-links" onClick={handleClick}>AttendaceReport</NavLink>
+                        to="/components/AttendanceReport" className="Nav-links" onClick={handleClick}>Attendace Report</NavLink>
                         </li>
 
                         <li className="Nav-item">
