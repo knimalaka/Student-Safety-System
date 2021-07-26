@@ -12,6 +12,7 @@ function AdminFrontPage(){
         
         <div className="UserFrontPage">
 
+        <div className="UserFrontPageAlign">
         <div className="UserFrontPageLogo">
         <img src={img1} alt=""/>
         </div>
@@ -23,7 +24,7 @@ function AdminFrontPage(){
         
         <div className="UserFrontOr"><p>--------------- or ----------------</p></div>
 
-
+        
         <div className="AdminSignup">
         <button onClick= {() => { history.push("./AdminSignupForm"); }}>Admin Signup</button>
         </div>
@@ -36,6 +37,7 @@ function AdminFrontPage(){
         <img src={img2} alt=""/>
         </div>
         
+        </div>
     </div>
            
     )

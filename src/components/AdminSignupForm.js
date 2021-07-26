@@ -87,10 +87,6 @@ console.log(errors);
         </div>      
         </form>
 
-        <div className="AdminSignupImage">
-        <img src={img4}/>
-        </div>
-
         </div>
     );
 };

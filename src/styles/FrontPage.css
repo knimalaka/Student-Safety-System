@@ -5,11 +5,16 @@
     justify-content: center;
     display: flex;
     display: block;
-    background: url(../Images/UserFront2.jpg) no-repeat center fixed;
+    background: url(../Images/Background.jpg) no-repeat center fixed;
     background-size: cover;
-    height: 100%;
-    width: 100%;
+    height: 170%;
+    width: 150%;
     margin: 0;
+}
+
+.FrontPageAlign{
+    transform: translate(-17.5%,-50%);
+    margin-top: -50px;
 }
 
 .FrontPageLogo{
@@ -22,7 +27,7 @@
  }
 
 .FrontPageLogo img{
-    margin-top: 70px;
+    margin-top: 370px;
     width: 160px;
     display: block;
     margin-left: 40%;
@@ -92,20 +97,20 @@
     margin-left: -70px;
   }
 
-.Parent:hover{
-    top: 64%;
-}
-  
 .imageParent{
     text-align: justify;
     width: 150px;
     position: absolute;
     left: 50%;
-    top: 65%;
+    top: 2565%;
     transform: translate(-50%,-50%);  
     margin-left: 0px;
     padding: 10px 10px;
   }
+
+.imageParent:hover{
+    top: 2540%;
+}
 
  .imageParent img{
     display: block;
@@ -122,7 +127,7 @@
      font-family: inherit;
      transform: translate(-50%,-50%);  
      margin-left: 70px;
-     margin-top: -20px;
+     margin-top: -30px;
  }
 
  .Admin{
@@ -133,20 +138,20 @@
     transform: translate(-50%,-50%);
     margin-left: 100px;  
    }
-
-.Admin:hover{
-    top: 64%;
-}
   
 .imageAdmin{
     text-align: justify;
     width: 150px;
     position: absolute;
     left: 50%;
-    top: 65%;
+    top: 2565%;
     transform: translate(-50%,-50%);  
     margin-left: 0px;
    }
+
+.imageAdmin:hover{
+    top: 2540%;
+}
 
  .imageAdmin img{
      display: block;
@@ -163,8 +168,7 @@
      margin-left: -10px;
      font-family: inherit;
      font-size: 20px;
-     margin-top: 20px;
+     margin-top: -20px;
      transform: translate(-50%,-50%);  
      margin-left: 70px;
-     margin-top: 0px;
  }

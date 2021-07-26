@@ -16,6 +16,8 @@ let history = useHistory();
           
         <div className="FrontPage">  
 
+        <div className="FrontPageAlign">
+
 
         <link href="//db.onlinewebfonts.com/c/3907276073752a03016016622e01a154?family=Cassannet+Regular" 
         rel="stylesheet" type="text/css"/>
@@ -42,6 +44,7 @@ let history = useHistory();
           <div className="imageAdmin"><img src={img3}/><p>Admin</p></div></button>
           </div>
   
+          </div>
           </div>                      
   
     )

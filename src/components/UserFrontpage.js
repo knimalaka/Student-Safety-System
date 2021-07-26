@@ -11,6 +11,7 @@ function UserFrontPage(){
     return(
         
     <div className="UserFrontPage">
+        <div className="UserFrontPageAlign">
 
         <div className="UserFrontPageLogo">
         <img src={img1} alt=""/>
@@ -37,6 +38,7 @@ function UserFrontPage(){
         <img src={img2} alt=""/>
         </div>
 
+        </div>
     </div>
            
     )

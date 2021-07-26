@@ -47,7 +47,7 @@ function AdminLoginForm() {
     }
 
     return (
-    <div className="LoginForm">
+    <div className="AdminLoginForm">
         <form onSubmit={submitHandler}>
             <div className="form-inner">
                 <div className="admin-form-inner"><h2>Admin Login</h2></div>
@@ -66,10 +66,6 @@ function AdminLoginForm() {
                 </div>
             </div>
         </form>  
-
-        <div className="AdminLoginImage">
-        <img src={img5}/>
-        </div>
 
     </div>
         

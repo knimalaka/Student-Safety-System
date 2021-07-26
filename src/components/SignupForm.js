@@ -100,10 +100,6 @@ console.log(errors);
             </div>      
         </form>
 
-        <div className="SignupImage">
-        <img src={img4}/>
-        </div>
-
     </div>
 
     );

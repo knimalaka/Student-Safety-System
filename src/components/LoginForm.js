@@ -70,10 +70,6 @@ function LoginForm() {
             </div>
         </form> 
 
-        <div className="LoginImage">
-        <img src={img1}/>
-        </div>
-
     </div>       
         
     )
