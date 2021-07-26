@@ -20,7 +20,11 @@ function AdminHome(){
   return(
     <>
     <NavBar />
-    <div className = "AdminHome">     
+    <div className = "AdminHome">    
+
+    <div className = "AdminHomeAlign">
+
+    <h1>Scan QR code</h1>
 
     <Grid container spacing={2}>
       <Grid item xl={4} lg={4} md={6} sm={12} xs={12}>
@@ -30,12 +34,12 @@ function AdminHome(){
         onScan={handleScanWebCam}
         />
 
-          <h1>Student ID: {scanResultWebcam}</h1>
+          <h2>Student ID: {scanResultWebcam}</h2>
 
       </Grid>
     </Grid>
 
-
+    </div>
     </div>
 
     </>       

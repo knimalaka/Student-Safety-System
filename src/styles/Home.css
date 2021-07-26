@@ -29,16 +29,21 @@
     font-weight: 500;  
     color: #00004d;
     top: 100px;
-    margin-left: 26%;
+    margin-left: 33%;
     position: absolute;
-    left: 70px;
+    left: 60px;
+    transform: translate(-50%,-50%);  
+
 }
 
 .QRcode img{
-    margin-top: 80px;
-    width: 300px;
-    left: 26%;
+    margin-top: 240px;
+    width: 250px;
+    left: 60px;
+    margin-left: 33%;
     position: absolute;
+    transform: translate(-50%,-50%);  
+
   }
 
 .QRcode .QRdownload{
@@ -49,8 +54,8 @@
     color: #fff;
     background-color: #1A5276;
     top: 530px;
-    margin-left: 26%;
-    left: 150px;
+    margin-left: 33%;
+    left: 60px;
     position: absolute;
     transform: translate(-50%,-50%);
     border-radius: 25px;  
@@ -59,7 +64,7 @@
 
 .QRcode .QRdownload:hover{
     color: #1A5276;
-    background-color: #BDC3C7;
+    background-color: #fff;
     font-weight: 600px;  
     border-color: #1A5276;
     border: solid;
@@ -79,7 +84,7 @@
     transform: translate(-50%,-50%);
     border-radius: 25px;  
 
-    display:none;
+    display: none;
 }
 
 .QRcode .qrTextField{

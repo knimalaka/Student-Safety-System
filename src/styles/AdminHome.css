@@ -9,18 +9,37 @@
     position: absolute;
 }
 
+.AdminHomeAlign{
+    transform: translate(0%,50%);
+    margin-top: 80px;
+}
+
+.AdminHome h1{
+    transform: translate(0%,50%);
+    margin-left: 40%;
+    margin-top:0px;
+    left: -50px;
+    position: absolute;
+    font-size: 30px;
+    color: #00004d;
+}
+
 .QrReader{
-       transform: translate(100%,20%);
-       margin-left: 30px;
-       width: 600px;
+       transform: translate(0%,50%);
+       margin-top: -100px;
+       margin-left: 40%;
+       left: -138px;
+       width: 350px;
+       position: absolute;
 
    }
 
-.AdminHome h1{
-    transform: translate(100%,20%);
-    margin-top: 110px;
-    margin-left: 450px;
+.AdminHome h2{
+    transform: translate(0%,50%);
+    margin-left: 40%;
+    margin-top: 440px;
+    left: -140px;
     position: absolute;
-
+    font-size: 20px;
 }
 

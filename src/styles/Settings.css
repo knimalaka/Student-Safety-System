@@ -37,11 +37,11 @@
     flex-direction: column;
     transform: translate(50%,50%);
     height: fit-content;
-    margin-left: -140px;
+    margin-left: -120px;
     top: 50px;
     color: #00004d;
     font-weight: 50;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .Nav-links-settings{
