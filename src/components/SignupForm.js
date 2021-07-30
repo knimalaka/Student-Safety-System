@@ -4,7 +4,6 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import 'react-phone-number-input/style.css';
 import Axios from 'axios';
-import { response } from 'express';
 
 const schema = yup.object().shape({
     student_Name: yup.string().required(),
