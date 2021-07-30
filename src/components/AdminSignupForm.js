@@ -28,8 +28,8 @@ const content={
             type: "text",
         },
         {
-            label: 'Email addresss',
-            name: 'email address',
+            label: 'Email',
+            name: 'email',
             type: "email",
         },
         {
