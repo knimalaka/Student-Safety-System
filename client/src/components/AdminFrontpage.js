@@ -22,9 +22,8 @@ function AdminFrontPage(){
         <button onClick= {() => { history.push("./AdminLoginForm"); }}>Admin Login</button>
         </div>
         
-        <div className="UserFrontOr"><p>--------------- or ----------------</p></div>
-
-        
+        <div className="UserFrontOr"><p>--------------- or ----------------</p></div> 
+       
         <div className="AdminSignup">
         <button onClick= {() => { history.push("./AdminSignupForm"); }}>Admin Signup</button>
         </div>
