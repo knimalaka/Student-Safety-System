@@ -1,9 +1,17 @@
-var express = require('express');
-var router = express.Router();
+const express = require("express");
+const mysql = require("mysql");
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+const app = express();
+
+app.use(express.json());
+
+const db = mysql.createConnection({
+    user: "root",
+    host: "localhost",
+    password: "password",
+    database: "studentsafetydb",
 });
 
-module.exports = router;
+app.listen(4000, () => {
+    console.log("server running");
+});

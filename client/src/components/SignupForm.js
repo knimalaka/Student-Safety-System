@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -58,15 +58,7 @@ const content={
     ],
 };
 
-/*
-const register = () => {
-    Axios.post("http://localhost:4000/register",{
-    inputs: reg,
-    }).then((response)=> {
-        console.log(response);
-    });
-};
-*/
+const [userReg, setUserReg] = useState('')
 
 const {register, handleSubmit, errors} = useForm({
  
@@ -94,6 +86,9 @@ console.log(errors);
                         className="input"
                         type={input.type}
                         {...register(input.label)}
+                        onChange={(e) => {
+                            setUserReg(e.target.value);
+                        }}
                         />
                     </div>    
                     </p>
