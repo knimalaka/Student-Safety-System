@@ -3,9 +3,8 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import 'react-phone-number-input/style.css';
-import PhoneInput from 'react-phone-number-input';
-import img4 from '../Images/children4.png';
-
+import Axios from 'axios';
+import { response } from 'express';
 
 const schema = yup.object().shape({
     student_Name: yup.string().required(),
@@ -13,7 +12,7 @@ const schema = yup.object().shape({
 });
 
 function SignupForm(){
-    
+
 const content={
 
     inputs: [
@@ -60,7 +59,17 @@ const content={
     ],
 };
 
-const {register, handleSubmit,errors} = useForm({
+/*
+const register = () => {
+    Axios.post("http://localhost:4000/register",{
+    inputs: reg,
+    }).then((response)=> {
+        console.log(response);
+    });
+};
+*/
+
+const {register, handleSubmit, errors} = useForm({
  
 });
 
@@ -99,7 +108,6 @@ console.log(errors);
 
             </div>      
         </form>
-
     </div>
 
     );
