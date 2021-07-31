@@ -12,7 +12,6 @@
     "bootstrap": "^5.0.2",
     "browserslist": "^4.16.6",
     "caniuse-lite": "^1.0.30001248",
-    "express": "^4.17.1",
     "mysql": "^2.18.1",
     "qrcode": "^1.4.4",
     "react": "^16.14.0",

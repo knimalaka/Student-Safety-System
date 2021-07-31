@@ -58,13 +58,18 @@ const content={
     ],
 };
 
-const [userReg, setUserReg] = useState('')
+const {register, handleSubmit, errors} = useForm({});
 
-const {register, handleSubmit, errors} = useForm({
- 
-});
+const reg = () => {
+    Axios.post("http://localhost4000/routes/register",{
+    inputs: register,
+    }).then((response) => {
+        console.log(response);
+    })
+}
 
 const onSubmit = (data) => console.log(data);
+
 console.log(errors);
 
     return(
@@ -86,9 +91,6 @@ console.log(errors);
                         className="input"
                         type={input.type}
                         {...register(input.label)}
-                        onChange={(e) => {
-                            setUserReg(e.target.value);
-                        }}
                         />
                     </div>    
                     </p>
@@ -96,7 +98,7 @@ console.log(errors);
                 ); 
             })}
 
-                <button className="btn" type="SUBMIT">
+                <button className="btn" type="SUBMIT" onClick={reg}>
                     SUBMIT
                 </button>  
 
