@@ -1,19 +1,18 @@
-"use strict";
 const express = require("express");
 const app = express();
+const student =  require("./routes/student");
+
+const mysql = require("mysql");
+
+
+
+app.use(express.json());
+
+app.use("/student", student);
 
 app.get("/", (req, res)=>{
     console.log(req.url);
     res.send("<h1>Hello</h1>");
-});
-
-
-app.get("/old", (req, res)=>{
-  res.redirect(301, "/new");
-});
-
-app.get("/new", (req, res) =>{
-  res.send("<h2>New</h2>");
 });
 
 
