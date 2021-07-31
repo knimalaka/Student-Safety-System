@@ -18,8 +18,8 @@ router.use(function(req, res, next){
 });
 
 router
-  .get('/students', (req, res) =>{
-    mysqlConnection.query('SELECT * FROM students', (err, rows, fields) =>{
+  .get(('/stu'),(req, res) =>{
+    mysqlConnection.query('SELECT * FROM students WHERE Student_ID = ?',[req.params.id],(err, rows, fields) =>{
       if(!err)
       res.send(rows);
       else

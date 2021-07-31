@@ -20,22 +20,21 @@ app.get("/", (req, res)=>{
   res.send("<h1>Hello</h1>");
 });
 
-mysqlConnection.connect((err) => {
-  if(!err)
-    console.log('DB connected successfully !');
-  else
-    console.log('DB connection failed \n Error :'+ JSON.stringify(err, undefined, 2));
-});
-
-app
-  .get('/students', (req, res) =>{
-    mysqlConnection.query('SELECT * FROM students', (err, rows, fields) =>{
+app.get('/students/:id',(req, res) =>{
+    mysqlConnection.query('SELECT * FROM students WHERE Student_ID = ?',[req.params.id],(err, rows, fields) =>{
       if(!err)
       res.send(rows);
       else
       console.log(err);
     })
   });
+
+mysqlConnection.connect((err) => {
+  if(!err)
+    console.log('DB connected successfully !');
+  else
+    console.log('DB connection failed \n Error :'+ JSON.stringify(err, undefined, 2));
+});
 
 app.listen(4000, (err)=>{
   if (err) {
