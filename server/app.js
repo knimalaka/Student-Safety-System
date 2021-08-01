@@ -8,7 +8,8 @@ var mysqlConnection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'password',
-  database: 'studentsafetydb'
+  database: 'studentsafetydb',
+  multipleStatements: true
 });
 
 app.use(express.json());
