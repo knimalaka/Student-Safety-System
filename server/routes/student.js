@@ -42,10 +42,7 @@ router.post('/register',(req,res)=>{
     CALL studentAddOrEdit (@First_Name,@Second_Name,@Student_ID,@Class,@Email,@Parents_Name,@Parents_Phone_Number,@Password);";
     mysqlConnection.query(sql,[stu.First_Name,stu.Second_Name,stu.Student_ID,stu.Class,stu.Email,stu.Parents_Name,stu.Parents_Phone_Number,stu.Password],(err, rows, fields) =>{
         if(!err)
-        rows.forEach(element => {
-          if(element.constrctor == Array)
-          res.send('Inserted student ID : '+element[0].Student_ID);
-        });
+        res.send(rows);
         else
         console.log(err);
       })  
