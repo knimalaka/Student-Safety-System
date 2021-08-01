@@ -17,23 +17,29 @@ router.use(function(req, res, next){
     next();
 });
 
-router
-  .get(('/stu'),(req, res) =>{
-    mysqlConnection.query('SELECT * FROM students WHERE Student_ID = ?',[req.params.id],(err, rows, fields) =>{
-      if(!err)
-      res.send(rows);
-      else
-      console.log(err);
-    })
-  });
-
-router
-  .route("/register")
-  .get((req, res)=>{
-      res.send("hi get register here");
+router.get('/stud',(req, res) =>{
+  mysqlConnection.query('SELECT * FROM students',[req.params.id],(err, rows, fields) =>{
+    if(!err)
+    res.send(rows);
+    else
+    console.log(err);
   })
-  .post((req,res)=>{
-    mysqlConnection.query('INSERT INTO students (Class, Email, First_Name, Parents_Name, Parents_Phone_Number, Password, Second_Name, Student_ID) VALUES (?,?,?,?,?,?,?,?)', (err, rows, fields) =>{
+});
+
+router.get('/stud/:id',(req, res) =>{
+  mysqlConnection.query('SELECT * FROM students WHERE Student_ID = ?',[req.params.id],(err, rows, fields) =>{
+    if(!err)
+    res.send(rows);
+    else
+    console.log(err);
+  })
+});
+
+router.post('/register',(req,res)=>{
+    let stu = req.body;
+    var sql = "SET @First_Name = ?; SET @Second_Name = ?; SET @Student_ID = ?; SET @Class = ?; SET @Email = ?; SET @Parents_Name = ?; SET @Parents_Phone_Number = ?; SET @Password =  ?\
+    CALL studentAddOrEdit (@First_Name,@Second_Name,@Student_ID,@Class,@Email,@Parents_Name,@Parents_Phone_Number,@Password);";
+    mysqlConnection.query(sql,[stu.First_Name,stu.Second_Name,stu.Student_ID,stu.Class,stu.Email,stu.Parents_Name,stu.Parents_Phone_Number,stu.Password],(err, rows, fields) =>{
         if(!err)
         res.send(rows);
         else
