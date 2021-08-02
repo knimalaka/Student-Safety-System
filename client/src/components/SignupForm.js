@@ -1,25 +1,20 @@
-import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
+import React, {useState} from 'react';
+import {useHistory} from "react-router-dom";
 import 'react-phone-number-input/style.css';
 import Axios from 'axios';
 
-const schema = yup.object().shape({
-    student_Name: yup.string().required(),
-    password: yup.string().required().min(5),
-});
-
 function SignupForm(){
 
-    const [Fist_NameReg, setFist_NameReg] = useState("");
-    const [Second_NameReg, setSecond_NameReg] = useState("");
-    const [Student_IDReg, setStudent_IDReg] = useState("");
-    const [ClassReg, setClassReg] = useState("");
-    const [EmailReg, setEmailReg] = useState("");
-    const [Parents_NameReg, setParents_NameReg] = useState("");
-    const [Parents_Phone_NumberReg, setParents_Phone_NumberReg] = useState("");
-    const [PasswordReg, setPasswordReg] = useState("");
+let history = useHistory();
+
+const [Fist_NameReg, setFist_NameReg] = useState("");
+const [Second_NameReg, setSecond_NameReg] = useState("");
+const [Student_IDReg, setStudent_IDReg] = useState("");
+const [ClassReg, setClassReg] = useState("");
+const [EmailReg, setEmailReg] = useState("");
+const [Parents_NameReg, setParents_NameReg] = useState("");
+const [Parents_Phone_NumberReg, setParents_Phone_NumberReg] = useState("");
+const [PasswordReg, setPasswordReg] = useState("");
 
 const register = () => {
     Axios.post("http://localhost4000/student/add",{
@@ -34,6 +29,10 @@ const register = () => {
     }).then((response) => {
         console.log(response);
     });
+};
+
+const goToUserFront = () => {
+    history.push("./Home")
 };
 
 const [error, setError] = useState("");
@@ -95,7 +94,7 @@ const [error, setError] = useState("");
                     setPasswordReg(e.target.value);}}/>
                 </div>
 
-                <button className="btn" type="submit" onClick={register}>
+                <button className="btn" type="submit" onClick={register,goToUserFront}>
                     SUBMIT
                 </button>  
 
@@ -107,5 +106,6 @@ const [error, setError] = useState("");
 };
 
 export default SignupForm;
+
  
 

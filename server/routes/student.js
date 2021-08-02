@@ -38,7 +38,6 @@ router.get('/stud/:id',(req, res) =>{
 });
 
 router.post('/add',(req,res)=>{
-    
     const First_Name = req.body.First_Name;
     const Second_Name = req.body.Second_Name;
     const Student_ID = req.body.Student_ID;
