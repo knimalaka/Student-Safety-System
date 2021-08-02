@@ -1,19 +1,16 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
+import {useHistory} from "react-router-dom";
 import 'react-phone-number-input/style.css';
-import PhoneInput from 'react-phone-number-input';
-import img4 from '../Images/children4.png';
-
-
-const schema = yup.object().shape({
-    admin_Name: yup.string().required(),
-    password: yup.string().required().min(5),
-});
 
 function AdminSignupForm(){
     
+let history = useHistory();
+
+const goToAdminFront = () => {
+    history.push("./AdminHome")
+};
+
 const content={
 
     inputs: [
@@ -80,7 +77,7 @@ console.log(errors);
                 );
             })}
             <div className="Adminbtn" >
-            <button type="SUBMIT">
+            <button type="SUBMIT" onClick={goToAdminFront}>
                 SUBMIT
             </button>     
             </div>

@@ -1,19 +1,20 @@
 const express = require("express");
 const app = express();
-const student =  require("./routes/student");
 const mysql = require("mysql");
+const student =  require("./routes/student");
+const admin =  require("./routes/admin");
 
 var mysqlConnection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'password',
   database: 'studentsafetydb',
-  multipleStatements: true
 });
 
 app.use(express.json());
 
 app.use("/student", student);
+app.use("/admin", admin);
 
 app.get("/", (req, res)=>{
   console.log(req.url);
