@@ -4,7 +4,7 @@ const mysql = require("mysql");
 const cors = require("cors");
 
 var mysqlConnection = mysql.createConnection({
-    host: 'localhost',
+    host: 'root',
     user: 'root',
     password: 'password',
     database: 'studentsafetydb',
@@ -38,6 +38,7 @@ router.get('/stud/:id',(req, res) =>{
 });
 
 router.post('/add',(req,res)=>{
+  console.log(req.body);
     const First_Name = req.body.First_Name;
     const Second_Name = req.body.Second_Name;
     const Student_ID = req.body.Student_ID;

@@ -1,0 +1,37 @@
+version: "3.8"
+
+services:
+
+  backend:
+    depends_on:
+        - mysql
+        - frontend
+    build:
+      context: server
+      dockerfile: Dockerfile
+    volumes:
+    - ./server:/var/www/html:delegated
+    ports: 
+    - "4000:4000"
+
+  mysql:
+    build:
+      context: docker-files
+      dockerfile: mysql.dockerfile
+    environment:
+      - MYSQL_DATABASE=studentsafetydb
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=password
+  
+  frontend:
+    build:
+      context: client
+      dockerfile: Dockerfile
+    ports:
+    - "3000:3000"
+
+
+
+
+

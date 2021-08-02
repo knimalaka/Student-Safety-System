@@ -7,7 +7,7 @@ function SignupForm(){
 
 let history = useHistory();
 
-const [Fist_NameReg, setFist_NameReg] = useState("");
+const [First_NameReg, setFirst_NameReg] = useState("");
 const [Second_NameReg, setSecond_NameReg] = useState("");
 const [Student_IDReg, setStudent_IDReg] = useState("");
 const [ClassReg, setClassReg] = useState("");
@@ -16,9 +16,16 @@ const [Parents_NameReg, setParents_NameReg] = useState("");
 const [Parents_Phone_NumberReg, setParents_Phone_NumberReg] = useState("");
 const [PasswordReg, setPasswordReg] = useState("");
 
-const register = () => {
-    Axios.post("http://localhost4000/student/add",{
-    Fist_Name: Fist_NameReg,
+const register = (event) => {
+    const headers = {
+        'Content-Type': 'application/json',
+        'Authorization': 'JWT fefege...'
+      }
+
+    event.preventDefault();
+    console.log("registerd successfully!")
+    Axios.post("http://localhost:4000/student/add",{
+    First_Name: First_NameReg,
     Second_Name: Second_NameReg,
     Student_ID: Student_IDReg,
     Class: ClassReg,
@@ -26,6 +33,8 @@ const register = () => {
     Parents_Name: Parents_NameReg,
     Parents_Phone_Number: Parents_Phone_NumberReg,
     Password: PasswordReg,
+    },{
+        headers :headers
     }).then((response) => {
         console.log(response);
     });
@@ -47,9 +56,9 @@ const [error, setError] = useState("");
                 {(error != "") ? (<div className="error">{error}</div>): ""}
 
                 <div className="form-group">
-                    <label htmlFor="Fist_Name">First Name</label>
-                    <input type="text" name="Fist_Name" id="Fist_Name" onChange={(e) => { 
-                    setFist_NameReg(e.target.value);}}/>
+                    <label htmlFor="First_Name">First Name</label>
+                    <input type="text" name="First_Name" id="First_Name" onChange={(e) => { 
+                    setFirst_NameReg(e.target.value);}}/>
                 </div>
 
                 <div className="form-group">
@@ -94,7 +103,7 @@ const [error, setError] = useState("");
                     setPasswordReg(e.target.value);}}/>
                 </div>
 
-                <button className="btn" type="submit" onClick={register,goToUserFront}>
+                <button className="btn" type="button" onClick={(e)=>register(e), goToUserFront}>
                     SUBMIT
                 </button>  
 

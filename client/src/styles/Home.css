@@ -84,12 +84,12 @@
     transform: translate(-50%,-50%);
     border-radius: 25px;  
 
-    display: none;
+    display: ;
 }
 
 .QRcode .qrTextField{
     top: 575px;
     position: absolute;
 
-    display: none;
+    display: ;
 }
