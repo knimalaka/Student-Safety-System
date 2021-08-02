@@ -35,7 +35,6 @@ function LoginForm() {
       }
 
 
-
     const[details, setDetails] = useState({email: "", password: ""});
 
     const submitHandler = e => {

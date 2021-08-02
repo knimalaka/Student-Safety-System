@@ -3,6 +3,7 @@ const app = express();
 const student =  require("./routes/student");
 const mysql = require("mysql");
 const bodyparser = require("body-parser");
+const cors = require("cors");
 
 var mysqlConnection = mysql.createConnection({
   host: 'localhost',
@@ -13,6 +14,7 @@ var mysqlConnection = mysql.createConnection({
 });
 
 app.use(express.json());
+app.use(cors());
 
 app.use("/student", student);
 
