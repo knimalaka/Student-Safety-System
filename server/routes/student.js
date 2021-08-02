@@ -54,7 +54,7 @@ router.post('/add',(req,res)=>{
 router.put('/edit',(req,res)=>{
   let stu = req.body;
   var sql = "SET @First_Name = ?;SET @Second_Name = ?;SET @Student_ID = ?;SET @Class = ?;SET @Email = ?;SET @Parents_Name = ?;SET @Parents_Phone_Number = ?;SET @Password =  ?;\
-  CALL studentAddOrEdit (@First_Name,@Second_Name,@Student_ID,@Class,@Email,@Parents_Name,@Parents_Phone_Number,@Password);";
+  CALL studentEdit (@First_Name,@Second_Name,@Student_ID,@Class,@Email,@Parents_Name,@Parents_Phone_Number,@Password);";
   mysqlConnection.query(sql,[stu.First_Name,stu.Second_Name,stu.Student_ID,stu.Class,stu.Email,stu.Parents_Name,stu.Parents_Phone_Number,stu.Password],(err, rows, fields) =>{
       if(!err)
         res.send('Updated successfully!');
