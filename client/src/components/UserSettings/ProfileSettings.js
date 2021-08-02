@@ -1,18 +1,36 @@
-import React from 'react';
+import React, { useState} from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
 import 'react-phone-number-input/style.css';
-  
-const schema = yup.object().shape({
-  student_Name: yup.string().required(),
-  password: yup.string().required().min(5),
-});
+import Axios from 'axios';
   
 function ProfileSettings(){
       
+  const [Fist_NameReg, setFist_NameReg] = useState("");
+  const [Second_NameReg, setSecond_NameReg] = useState("");
+  const [Student_IDReg, setStudent_IDReg] = useState("");
+  const [ClassReg, setClassReg] = useState("");
+  const [EmailReg, setEmailReg] = useState("");
+  const [Parents_NameReg, setParents_NameReg] = useState("");
+  const [Parents_Phone_NumberReg, setParents_Phone_NumberReg] = useState("");
+  const [PasswordReg, setPasswordReg] = useState("");
+
+const register = () => {
+    Axios.put("http://localhost4000/student/edit",{
+    Fist_Name: Fist_NameReg,
+    Second_Name: Second_NameReg,
+    Student_ID: Student_IDReg,
+    Class: ClassReg,
+    Email: EmailReg,
+    Parents_Name: Parents_NameReg,
+    Parents_Phone_Number: Parents_Phone_NumberReg,
+    Password: PasswordReg,
+    }).then((response) => {
+        console.log(response);
+    });
+};
+
   const content={
-  
       inputs: [
           {
             label: 'Current Password',
@@ -48,11 +66,11 @@ function ProfileSettings(){
       ],
   };
   
-const {register, handleSubmit,errors} = useForm({
+const {handleSubmit,errors} = useForm({
    
 });
   
-  const onSubmit = (data) => console.log(data);
+const onSubmit = (data) => console.log(data);
   console.log(errors);
   
     return(
