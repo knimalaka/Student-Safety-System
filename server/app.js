@@ -5,7 +5,7 @@ const student =  require("./routes/student");
 const admin =  require("./routes/admin");
 
 var mysqlConnection = mysql.createConnection({
-  host: 'root',
+  host: 'localhost',
   user: 'root',
   password: 'password',
   database: 'studentsafetydb',

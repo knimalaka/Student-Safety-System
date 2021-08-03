@@ -4,7 +4,7 @@ const mysql = require("mysql");
 const cors = require("cors");
 
 var mysqlConnection = mysql.createConnection({
-    host: 'root',
+    host: 'localhost',
     user: 'root',
     password: 'password',
     database: 'studentsafetydb',
@@ -60,6 +60,31 @@ router.post('/add',(req,res)=>{
         console.log(err);
       })  
 });
+
+
+
+
+router.post('/login',(req,res) =>{
+  const Email = req.body.Email;
+  const Password = req.body.Password;
+
+  mysqlConnection.query(
+    "SELECT * FROM students WHERE Email = ? AND Password = ?",
+    [Email, Password],
+    (err,result) => {
+    if (err) {
+      res.send({err: err});     
+    }
+
+    if (result.length > 0) {
+      res.send(result);
+    }else{
+        res.send({ message: "Wrong Email and Password combination !"});
+        }
+      } 
+    );
+  });
+
 
 router.put('/edit',(req,res)=>{
   let stu = req.body;

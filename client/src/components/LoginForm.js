@@ -1,69 +1,62 @@
 import React, {useState} from 'react'; 
 import {useHistory} from "react-router-dom";
 import img1 from '../Images/children3.png';
+import Axios from "axios";
  
 function LoginForm() {
 
-    let history = useHistory();
+  let history = useHistory();
 
-    const adminUser = {
-        email : "parent@parent.com",
-        password : "1234"
+  const [EmailReg, setEmailReg] = useState("");
+  const [PasswordReg, setPasswordReg] = useState("");
+
+  const [error, setError] = useState("");
+    
+  const login = (event) => {
+    const headers = {
+        'Content-Type': 'application/json',
+        'Authorization': 'JWT fefege...'
       }
-    
-      const [user, setUser] = useState({email: ""});
-      const [error, setError] = useState("");
-    
-      const Login = details => {
-        console.log(details);
-    
-        if(details.email == adminUser.email && details.password == adminUser.password){
-             return(
 
-                history.push("./Home")
+    event.preventDefault();
+    console.log("login started!")
+    Axios.post("http://localhost:4000/student/login",{
+    Email: EmailReg,
+    Password: PasswordReg,
+    },{
+        headers :headers
+    }).then((response) =>{
 
-        );
-
-        } else {
-          console.log("Details do not match!");
-          setError("Details do not match!");
+        if(response.data.message){
+          setError(response.data.message);
+        }else{
+          history.push("./Home");
         }
-      }
-    
-      const Logout = () => {
-        setUser({name: "", email: ""});
-      }
+      });
+  };
 
 
-    const[details, setDetails] = useState({email: "", password: ""});
-
-    const submitHandler = e => {
-        e.preventDefault();
-
-        Login(details);
-    }
-
-    return (
+  return (
     
     <div className="LoginForm"> 
-        <form onSubmit={submitHandler}>
+        <form>
             <div className="form-inner">
                 <h2>Login</h2>
                 {(error != "") ? (<div className="error">{error}</div>): ""}
 
                 <div className="form-group">
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" onChange={e => 
-                    setDetails({...details, email: e.target.value})} value={details.email}/>
+                    <label htmlFor="EmailReg">Email</label>
+                    <input type="email" name="EmailReg" id="EmailReg" onChange={e => 
+                    setEmailReg(e.target.value)}/>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="password">Password</label>
-                    <input type="password" name="password" id="password" onChange={e => 
-                    setDetails({...details, password: e.target.value})} value={details.password}/>
+                    <label htmlFor="PasswordReg">Password</label>
+                    <input type="password" name="PasswordReg" id="PasswordReg" onChange={e => 
+                    setPasswordReg(e.target.value)}/>
                 </div>
                 
                 <div className="form-group">
-                <input type="submit" value="LOGIN" />
+                <input value="LOGIN" type="submit" onClick={login} />
                 </div>
 
             </div>

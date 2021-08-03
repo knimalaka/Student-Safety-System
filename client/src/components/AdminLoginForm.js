@@ -1,73 +1,68 @@
 import React, {useState} from 'react'; 
 import{ BrowserRouter as Router, Route, Link, NavLink, Switch} from "react-router-dom";
-import Home from './Home';
 import {useHistory} from "react-router-dom";
-import img5 from '../Images/children5.png';
+import Axios from "axios";
  
 function AdminLoginForm() {
 
-    let history = useHistory();
+  let history = useHistory();
 
-    const adminUser = {
-        email : "admin@admin.com",
-        password : "1234"
+  const [EmailReg, setEmailReg] = useState("");
+  const [PasswordReg, setPasswordReg] = useState("");
+
+  const [error, setError] = useState("");
+    
+  const login = (event) => {
+    const headers = {
+        'Content-Type': 'application/json',
+        'Authorization': 'JWT fefege...'
       }
-    
-      const [user, setUser] = useState({email: ""});
-      const [error, setError] = useState("");
-    
-      const Login = details => {
-        console.log(details);
-    
-        if(details.email == adminUser.email && details.password == adminUser.password){
-             return(
 
-                history.push("./AdminHome")
+    event.preventDefault();
+    console.log("login started!")
+    Axios.post("http://localhost:4000/admin/login",{
+    Email: EmailReg,
+    Password: PasswordReg,
+    },{
+        headers :headers
+    }).then((response) =>{
 
-        );
-
-        } else {
-          console.log("Details do not match!");
-          setError("Details do not match!");
+        if(response.data.message){
+          setError(response.data.message);
+        }else{
+          history.push("./AdminHome");
         }
-      }
+      });
+  };
+
+
+  return (
     
-      const Logout = () => {
-        setUser({email: ""});
-      }
-
-
-
-    const[details, setDetails] = useState({email: "", password: ""});
-
-    const submitHandler = e => {
-        e.preventDefault();
-
-        Login(details);
-    }
-
-    return (
-    <div className="AdminLoginForm">
-        <form onSubmit={submitHandler}>
+    <div className="AdminLoginForm"> 
+        <form>
             <div className="form-inner">
-                <div className="admin-form-inner"><h2>Admin Login</h2></div>
+                <h2>Login</h2>
                 {(error != "") ? (<div className="error">{error}</div>): ""}
 
                 <div className="form-group">
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" onChange={e => setDetails({...details, email: e.target.value})} value={details.email}/>
+                    <label htmlFor="EmailReg">Email</label>
+                    <input type="email" name="EmailReg" id="EmailReg" onChange={e => 
+                    setEmailReg(e.target.value)}/>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="password">Password</label>
-                    <input type="password" name="password" id="password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password}/>
+                    <label htmlFor="PasswordReg">Password</label>
+                    <input type="password" name="PasswordReg" id="PasswordReg" onChange={e => 
+                    setPasswordReg(e.target.value)}/>
                 </div>
+                
                 <div className="form-group">
-                <input type="submit" value="LOGIN" />
+                <input value="LOGIN" type="submit" onClick={login} />
                 </div>
-            </div>
-        </form>  
 
-    </div>
+            </div>
+        </form> 
+
+    </div>       
         
     )
 }

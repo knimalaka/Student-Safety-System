@@ -3,6 +3,7 @@ import { Router } from 'react-router';
 import NavBar from './NavBar';
 import {Container, Card, CardContent, makeStyles, Grid, TextField, Button} from '@material-ui/core';
 import QRCode from 'qrcode';
+import EmailReg from './LoginForm';
 
 function Home (){
   const [text, setText] = useState('');

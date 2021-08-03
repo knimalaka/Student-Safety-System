@@ -1,93 +1,97 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
+import React, {useState} from 'react';
 import {useHistory} from "react-router-dom";
 import 'react-phone-number-input/style.css';
+import Axios from 'axios';
 
 function AdminSignupForm(){
-    
+
 let history = useHistory();
 
-const goToAdminFront = () => {
-    history.push("./AdminHome")
+const [Admin_NameReg, setAdmin_NameReg] = useState("");
+const [Admin_IDReg, setAdmin_IDReg] = useState("");
+const [EmailReg, setEmailReg] = useState("");
+const [Phone_NumberReg, setPhone_NumberReg] = useState("");
+const [PasswordReg, setPasswordReg] = useState("");
+
+const goToUserFront = () => {
+    history.push("./Home")
 };
 
-const content={
+const register = (event) => {
+    const headers = {
+        'Content-Type': 'application/json',
+        'Authorization': 'JWT fefege...'
+      }
 
-    inputs: [
-        {
-            label:"Admin Name",
-            name: "admin_Name",
-            type: "text",
-        },
-        {
-            label: 'Admin ID',
-            name: 'admin_ID',
-            type: "text",
-        },
-        {
-            label: 'Email',
-            name: 'email',
-            type: "email",
-        },
-        {
-            label: 'Phone Number',
-            name: 'phone Number',
-            type: "text",
-        },
-        {
-            label: 'Password',
-            name: 'password',
-            type: "password",
-        },
-    ],
+    event.preventDefault();
+    console.log("registerd successfully!")
+    Axios.post("http://localhost:4000/admin/add",{
+    Admin_Name: Admin_NameReg,
+    Admin_ID: Admin_IDReg,
+    Email: EmailReg,
+    Phone_Number: Phone_NumberReg,
+    Password: PasswordReg,
+    },{
+        headers :headers
+    }).then((response) =>{
+        console.log(response);
+        history.push("./AdminHome");
+    })
 };
 
-const {register, handleSubmit,errors} = useForm({
- 
-});
-
-const onSubmit = (data) => console.log(data);
-console.log(errors);
+const [error, setError] = useState("");
 
     return(
 
-        <div className="AdminSignupForm">
-        <form  onSubmit={handleSubmit(onSubmit)}>
+    <div className="AdminSignupForm">
+      <form>
         <div className="form-inner">
+            <h2>Signup</h2>
 
- 
-        <div className="AdminH2"><h2>Admin Signup</h2></div>
-            {content.inputs.map((input, key) => {
-                return( 
-                <div key={key}>
-                    <p>
-                        <label className="label">{input.label}</label>
- 
-                    <div className="form-group">
+                {(error != "") ? (<div className="error">{error}</div>): ""}
 
-                        <input 
-                        name={input.name} 
-                        className="input"
-                        type={input.type}
-                        {...register(input.label)}
-                        />
-                    </div>    
-                    </p>
-                  </div>
-                );
-            })}
-            <div className="Adminbtn" >
-            <button type="SUBMIT" onClick={goToAdminFront}>
-                SUBMIT
-            </button>     
-            </div>
-        </div>      
+                <div className="form-group">
+                    <label htmlFor="Admin_Name">Admin Name</label>
+                    <input type="text" name="Admin_Name" id="Admin_Name" onChange={(e) => { 
+                    setAdmin_NameReg(e.target.value);}}/>
+                </div>
+
+                <div className="form-group">
+                    <label htmlFor="Admin_ID">Admin ID</label>
+                    <input type="text" name="Admin_ID" id="Admin_ID" onChange={(e) => { 
+                    setAdmin_IDReg(e.target.value);}}/>
+                </div>
+
+                <div className="form-group">
+                    <label htmlFor="Email">Email</label>
+                    <input type="Email" name="Email" id="Email" onChange={(e) => { 
+                    setEmailReg(e.target.value);}}/>
+                </div>
+
+                <div className="form-group">
+                    <label htmlFor="Phone_Number">Phone Number</label>
+                    <input type="text" name="Phone_Number" id="Phone_Number" onChange={(e) => { 
+                    setPhone_NumberReg(e.target.value);}}/>
+                </div>
+
+                <div className="form-group">
+                    <label htmlFor="Password">Password</label>
+                    <input type="Password" name="Password" id="Password" onChange={(e) => { 
+                    setPasswordReg(e.target.value);}}/>
+                </div>
+
+                <button className="btn" type="button" onClick={((e)=>register(e))}>
+                    SUBMIT
+                </button>  
+
+            </div>      
         </form>
+    </div>
 
-        </div>
     );
 };
 
 export default AdminSignupForm;
+
  
 

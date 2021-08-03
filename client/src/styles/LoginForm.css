@@ -123,6 +123,7 @@ form .form-inner .form-group input[type="submit"]{
 
 .error{
     color: #C0392B;
+    margin-left: -15px;
   }
 
 .LoginImage img{

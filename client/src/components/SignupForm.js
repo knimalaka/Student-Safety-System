@@ -16,6 +16,10 @@ const [Parents_NameReg, setParents_NameReg] = useState("");
 const [Parents_Phone_NumberReg, setParents_Phone_NumberReg] = useState("");
 const [PasswordReg, setPasswordReg] = useState("");
 
+const goToUserFront = () => {
+    history.push("./Home")
+};
+
 const register = (event) => {
     const headers = {
         'Content-Type': 'application/json',
@@ -35,13 +39,10 @@ const register = (event) => {
     Password: PasswordReg,
     },{
         headers :headers
-    }).then((response) => {
+    }).then((response) =>{
         console.log(response);
-    });
-};
-
-const goToUserFront = () => {
-    history.push("./Home")
+        history.push("./Home");
+    })
 };
 
 const [error, setError] = useState("");
@@ -103,7 +104,7 @@ const [error, setError] = useState("");
                     setPasswordReg(e.target.value);}}/>
                 </div>
 
-                <button className="btn" type="button" onClick={(e)=>register(e), goToUserFront}>
+                <button className="btn" type="button" onClick={((e)=>register(e))}>
                     SUBMIT
                 </button>  
 

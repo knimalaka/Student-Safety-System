@@ -39,6 +39,29 @@ router.post('/add',(req,res)=>{
       })  
 });
 
+
+router.post('/login',(req,res) =>{
+  const Email = req.body.Email;
+  const Password = req.body.Password;
+
+  mysqlConnection.query(
+    "SELECT * FROM admins WHERE Email = ? AND Password = ?",
+    [Email, Password],
+    (err,result) => {
+    if (err) {
+      res.send({err: err});     
+    }
+
+    if (result.length > 0) {
+      res.send(result);
+    }else{
+        res.send({ message: "Wrong Email and Password combination !"});
+        }
+      } 
+    );
+});
+
+
 router.put('/edit',(req,res)=>{
   let stu = req.body;
   var sql = "SET @Admin_Name = ?;SET @Admin_ID = ?;SET @Email = ?;SET @Phone_Number = ?;SET @Password =  ?;\
