@@ -19,24 +19,6 @@ router.use(function(req, res, next){
 
 router.use(cors());
 
-router.get('/stud',(req, res) =>{
-  mysqlConnection.query('SELECT * FROM students',[req.params.id],(err, rows, fields) =>{
-    if(!err)
-    res.send(rows);
-    else
-    console.log(err);
-  })
-});
-
-router.get('/stud/:id',(req, res) =>{
-  mysqlConnection.query('SELECT * FROM students WHERE Student_ID = ?',[req.params.id],(err, rows, fields) =>{
-    if(!err)
-    res.send(rows);
-    else
-    console.log(err);
-  })
-});
-
 router.post('/add',(req,res)=>{
   console.log(req.body);
     const First_Name = req.body.First_Name;
@@ -61,9 +43,6 @@ router.post('/add',(req,res)=>{
       })  
 });
 
-
-
-
 router.post('/login',(req,res) =>{
   const Email = req.body.Email;
   const Password = req.body.Password;
@@ -83,21 +62,30 @@ router.post('/login',(req,res) =>{
         }
       } 
     );
-  });
-
+  }); 
 
 router.put('/edit',(req,res)=>{
-  let stu = req.body;
-  var sql = "SET @First_Name = ?;SET @Second_Name = ?;SET @Student_ID = ?;SET @Class = ?;SET @Email = ?;SET @Parents_Name = ?;SET @Parents_Phone_Number = ?;SET @Password =  ?;\
-  CALL studentEdit (@First_Name,@Second_Name,@Student_ID,@Class,@Email,@Parents_Name,@Parents_Phone_Number,@Password);";
-  mysqlConnection.query(sql,[stu.First_Name,stu.Second_Name,stu.Student_ID,stu.Class,stu.Email,stu.Parents_Name,stu.Parents_Phone_Number,stu.Password],(err, rows, fields) =>{
-      if(!err){
-        res.status(200).send({
-          message: 'Updated successfully!'})
-        }
+  console.log(req.body);
+    const First_Name = req.body.First_Name;
+    const Second_Name = req.body.Second_Name;
+    const Student_ID = req.body.Student_ID;
+    const Class = req.body.Class;
+    const Email = req.body.Email;
+    const Parents_Phone_Number = req.body.Parents_Phone_Number;
+    const Password = req.body.Password;
+
+    mysqlConnection.query(
+      "UPDATE students SET First_Name=First_Name,Second_Name=Second_Name,Class=Class,Email=Email,Parents_Phone_Number=Parents_Phone_Number WHERE Student_ID=Student_ID AND Password=Password",
+      [First_Name,Second_Name,Student_ID,Class,Email,Parents_Phone_Number,Password],
+
+      (err, rows, fields) =>{
+        if(!err){
+          res.status(200).send({
+            message: 'Welcome '+ First_Name+"!"})
+          }
         else
-      console.log(err);
-    })  
+        console.log(err);
+      })  
 });
 
 module.exports = router; 

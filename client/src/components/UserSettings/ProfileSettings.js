@@ -11,7 +11,6 @@ function ProfileSettings(){
   const [Student_IDReg, setStudent_IDReg] = useState("");
   const [ClassReg, setClassReg] = useState("");
   const [EmailReg, setEmailReg] = useState("");
-  const [Parents_NameReg, setParents_NameReg] = useState("");
   const [Parents_Phone_NumberReg, setParents_Phone_NumberReg] = useState("");
   const [PasswordReg, setPasswordReg] = useState("");
 
@@ -22,7 +21,6 @@ const register = () => {
     Student_ID: Student_IDReg,
     Class: ClassReg,
     Email: EmailReg,
-    Parents_Name: Parents_NameReg,
     Parents_Phone_Number: Parents_Phone_NumberReg,
     Password: PasswordReg,
     }).then((response) => {
